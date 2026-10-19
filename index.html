@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shivshambhu — software development, web design, mobile apps, and IT consulting." />
+  <title>Shivshambhu — Build what matters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Shivshambhu home">Shivshambhu</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <!-- Team tab — add back later
+          <li><a href="#team">Team</a></li>
+          -->
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Home / Hero -->
+    <section class="hero" id="home" aria-label="Home">
+      <div class="hero-media" role="img" aria-label="Developers collaborating in a modern workspace"></div>
+      <div class="hero-scrim"></div>
+      <div class="container hero-content">
+        <p class="brand-mark">Shivshambhu</p>
+        <h1>Software that moves your business forward</h1>
+        <p class="hero-lead">We design and build web, mobile, and cloud products for teams that need clarity, speed, and craft.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Start a project</a>
+          <a class="btn btn-ghost" href="#services">Explore services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container narrow">
+        <p class="eyebrow">About Us</p>
+        <h2>A product studio for ambitious teams</h2>
+        <p class="lede">Shivshambhu helps companies turn ideas into reliable digital products. From first sketch to production launch, we partner with you on strategy, design, and engineering.</p>
+        <div class="mission">
+          <h3>Our mission</h3>
+          <p>To make software that feels simple for users and sustainable for the teams who maintain it — clear interfaces, solid architecture, and honest collaboration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h2>What we deliver</h2>
+        <p class="lede section-lede">Four focused offerings, one integrated team.</p>
+        <ul class="service-list">
+          <li>
+            <h3>Software development</h3>
+            <p>Custom applications, APIs, and platforms built for performance and long-term maintainability.</p>
+          </li>
+          <li>
+            <h3>Web design</h3>
+            <p>Brand-led sites and product UI with responsive layouts that work from phone to desktop.</p>
+          </li>
+          <li>
+            <h3>Mobile apps</h3>
+            <p>Native-feel iOS and Android experiences, from MVP to App Store–ready releases.</p>
+          </li>
+          <li>
+            <h3>IT consulting</h3>
+            <p>Architecture reviews, tech strategy, and guidance so your stack matches your goals.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Products — data driven from js/products.js -->
+    <section class="section" id="products">
+      <div class="container">
+        <p class="eyebrow">Our Products</p>
+        <h2>SSSPark</h2>
+        <p class="lede section-lede">A QR vehicle sticker from Shivshambhu Software. Open the card for the full product.</p>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Team section — add back later
+    <section class="section section-alt" id="team">
+      <div class="container">
+        <p class="eyebrow">Our Team</p>
+        <h2>People behind the work</h2>
+        <p class="lede section-lede">A compact team of designers and engineers.</p>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
+    </section>
+    -->
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-intro">
+          <p class="eyebrow">Contact Us</p>
+          <h2>Tell us about your project</h2>
+          <p class="lede">Send a message below, or email us directly — we usually reply within one business day.</p>
+          <a class="email-link" href="mailto:hello@shivshambhu.example">hello@shivshambhu.example</a>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@company.com" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="What are you building?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="section section-alt" id="location">
+      <div class="container">
+        <p class="eyebrow">Location</p>
+        <h2>Visit our office</h2>
+        <p class="lede section-lede">Shivshambhu is on Talera Hospital Road, Tanaji Nagar, Chinchwad Gaon, Pimpri-Chinchwad (PCMC), Maharashtra 411033.</p>
+        <div class="location-layout">
+          <address class="address-block">
+            <strong>Shivshambhu</strong><br />
+            Shreeyash Apartments<br />
+            Talera Hospital Road<br />
+            Tanaji Nagar, Chinchwad Gaon<br />
+            Pimpri-Chinchwad (PCMC), Maharashtra 411033<br />
+            India
+          </address>
+          <div class="map-frame">
+            <iframe
+              title="Shivshambhu on Google Maps"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=18.625278,73.783889&amp;z=16&amp;output=embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Shivshambhu</p>
+      <p class="footer-copy">&copy; <span id="year"></span> Shivshambhu. All rights reserved.</p>
+      <a href="mailto:hello@shivshambhu.example">hello@shivshambhu.example</a>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/team.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
