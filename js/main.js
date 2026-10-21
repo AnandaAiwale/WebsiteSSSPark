@@ -195,9 +195,9 @@
       statusEl.hidden = false;
       statusEl.classList.add("is-success");
       statusEl.textContent =
-        "Thanks — your message is ready. Your email app will open so you can send it to hello@shivshambhu.example.";
+        "Thanks — your message is ready. Your email app will open so you can send it to shivshambhusoft@gmail.com.";
 
-      window.location.href = "mailto:hello@shivshambhu.example?subject=" + subject + "&body=" + body;
+      window.location.href = "mailto:shivshambhusoft@gmail.com?subject=" + subject + "&body=" + body;
       form.reset();
     });
   }
@@ -288,9 +288,9 @@
       orderStatus.hidden = false;
       orderStatus.classList.add("is-success");
       orderStatus.textContent =
-        "Thanks — the SSSPark order is ready. Your email app will open so you can send it to hello@shivshambhu.example.";
+        "Thanks — the SSSPark order is ready. Your email app will open so you can send it to shivshambhusoft@gmail.com.";
 
-      window.location.href = "mailto:hello@shivshambhu.example?subject=" + subject + "&body=" + body;
+      window.location.href = "mailto:shivshambhusoft@gmail.com?subject=" + subject + "&body=" + body;
       orderForm.reset();
       qtyInput.value = "1";
     });
