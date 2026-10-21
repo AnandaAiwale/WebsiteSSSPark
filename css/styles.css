@@ -540,9 +540,29 @@ code {
   align-items: start;
 }
 
+.contact-person {
+  margin: 1.15rem 0 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.contact-person span {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
 .email-link {
   display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: 0.35rem;
   font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 700;
@@ -678,8 +698,13 @@ code {
   font-weight: 800;
 }
 
-.footer-copy {
+.footer-copy,
+.footer-person {
   margin: 0;
+}
+
+.footer-person {
+  line-height: 1.45;
 }
 
 .site-footer a {
