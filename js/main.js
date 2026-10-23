@@ -131,7 +131,7 @@
       observer.observe(el);
     });
 
-    document.querySelectorAll(".section .eyebrow, .section h2, .service-list li").forEach(function (el) {
+    document.querySelectorAll(".section .eyebrow, .section h2, .service-cards li").forEach(function (el) {
       el.classList.add("reveal");
       observer.observe(el);
     });
@@ -141,7 +141,38 @@
     });
   }
 
-  /* Contact form — client-side validation + mailto handoff for static hosting */
+  /* Forms email shivshambhusoft@gmail.com through FormSubmit (static hosting has no mail server). */
+  var inbox = "shivshambhusoft@gmail.com";
+
+  function sendToInbox(payload) {
+    return fetch("https://formsubmit.co/ajax/" + inbox, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify(payload)
+    }).then(function (response) {
+      return response.json().then(function (data) {
+        var ok = response.ok && data && (data.success === true || data.success === "true");
+        if (!ok) {
+          throw new Error((data && data.message) || "Send failed");
+        }
+        return data;
+      });
+    });
+  }
+
+  function setSending(button, sending) {
+    if (!button) return;
+    if (!button.dataset.labelHtml) {
+      button.dataset.labelHtml = button.innerHTML;
+    }
+    button.disabled = sending;
+    button.innerHTML = sending ? "Sending..." : button.dataset.labelHtml;
+  }
+
+  /* Contact form */
   if (form && statusEl) {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -149,6 +180,7 @@
       const nameInput = form.querySelector("#name");
       const emailInput = form.querySelector("#email");
       const messageInput = form.querySelector("#message");
+      const submitBtn = form.querySelector("[type=submit]");
       const fields = [nameInput, emailInput, messageInput];
 
       fields.forEach(function (field) {
@@ -182,23 +214,27 @@
         return;
       }
 
-      const subject = encodeURIComponent("Website inquiry from " + nameInput.value.trim());
-      const body = encodeURIComponent(
-        "Name: " +
-          nameInput.value.trim() +
-          "\nEmail: " +
-          email +
-          "\n\n" +
-          messageInput.value.trim()
-      );
-
-      statusEl.hidden = false;
-      statusEl.classList.add("is-success");
-      statusEl.textContent =
-        "Thanks — your message is ready. Your email app will open so you can send it to shivshambhusoft@gmail.com.";
-
-      window.location.href = "mailto:shivshambhusoft@gmail.com?subject=" + subject + "&body=" + body;
-      form.reset();
+      setSending(submitBtn, true);
+      sendToInbox({
+        _subject: "Website inquiry from " + nameInput.value.trim(),
+        _template: "table",
+        _captcha: "false",
+        _replyto: email,
+        Name: nameInput.value.trim(),
+        Email: email,
+        Message: messageInput.value.trim()
+      }).then(function () {
+        statusEl.hidden = false;
+        statusEl.classList.add("is-success");
+        statusEl.textContent = "Thanks. Your message was sent to shivshambhusoft@gmail.com.";
+        form.reset();
+      }).catch(function () {
+        statusEl.hidden = false;
+        statusEl.classList.add("is-error");
+        statusEl.textContent = "The message could not be sent. Email shivshambhusoft@gmail.com directly.";
+      }).then(function () {
+        setSending(submitBtn, false);
+      });
     });
   }
 
@@ -267,32 +303,33 @@
         return;
       }
 
-      const subject = encodeURIComponent("SSSPark sticker order from " + nameInput.value.trim());
-      const body = encodeURIComponent(
-        "Name: " +
-          nameInput.value.trim() +
-          "\nPhone: " +
-          phone +
-          "\nEmail: " +
-          email +
-          "\nCity: " +
-          cityInput.value.trim() +
-          "\nVehicle: " +
-          vehicleInput.value +
-          "\nStickers: " +
-          String(qty) +
-          "\n\n" +
-          notesInput.value.trim()
-      );
-
-      orderStatus.hidden = false;
-      orderStatus.classList.add("is-success");
-      orderStatus.textContent =
-        "Thanks — the SSSPark order is ready. Your email app will open so you can send it to shivshambhusoft@gmail.com.";
-
-      window.location.href = "mailto:shivshambhusoft@gmail.com?subject=" + subject + "&body=" + body;
-      orderForm.reset();
-      qtyInput.value = "1";
+      const submitBtn = orderForm.querySelector("[type=submit]");
+      setSending(submitBtn, true);
+      sendToInbox({
+        _subject: "SSSPark sticker order from " + nameInput.value.trim(),
+        _template: "table",
+        _captcha: "false",
+        _replyto: email,
+        Name: nameInput.value.trim(),
+        Phone: phone,
+        Email: email,
+        City: cityInput.value.trim(),
+        Vehicle: vehicleInput.value,
+        Stickers: String(qty),
+        Notes: notesInput.value.trim()
+      }).then(function () {
+        orderStatus.hidden = false;
+        orderStatus.classList.add("is-success");
+        orderStatus.textContent = "Thanks. Your SSSPark order was sent to shivshambhusoft@gmail.com.";
+        orderForm.reset();
+        qtyInput.value = "1";
+      }).catch(function () {
+        orderStatus.hidden = false;
+        orderStatus.classList.add("is-error");
+        orderStatus.textContent = "The order could not be sent. Email shivshambhusoft@gmail.com directly.";
+      }).then(function () {
+        setSending(submitBtn, false);
+      });
     });
   }
 })();
