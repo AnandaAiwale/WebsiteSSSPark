@@ -33,10 +33,10 @@
 }
 
 .park-kicker {
-  margin: -0.35rem 0 0.9rem;
-  font-family: var(--font-display);
+  margin: -0.35rem 0 0.85rem;
+  font-family: var(--font-body);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: var(--accent-deep);
 }
 
@@ -133,7 +133,8 @@
 
 .park-script blockquote p {
   margin: 0;
-  font-size: 1.08rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: var(--ink);
 }
 
@@ -142,6 +143,8 @@
   padding-left: 1.15rem;
   display: grid;
   gap: 0.45rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
   color: var(--muted);
 }
 
@@ -170,9 +173,9 @@
 
 .park-rates dd {
   margin: 0.2rem 0 0;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: var(--ink);
 }
 
@@ -233,8 +236,9 @@
   grid-column: span 2;
   background: var(--white);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1.1rem 1rem 1.15rem;
+  border-radius: 12px;
+  padding: 1.1rem 1.15rem;
+  box-shadow: 0 4px 14px rgba(12, 18, 32, 0.04);
 }
 
 .park-benefits li:nth-child(4),
@@ -242,8 +246,18 @@
   grid-column: span 3;
 }
 
+.park-benefits h3 {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+}
+
 .park-benefits p {
   margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
   color: var(--muted);
 }
 
