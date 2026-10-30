@@ -249,7 +249,7 @@
 .park-benefits h3 {
   font-family: var(--font-body);
   font-size: 1.05rem;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 0 0.35rem;
   color: var(--ink);
 }

@@ -744,64 +744,6 @@ code {
   stroke-linejoin: round;
 }
 
-/* About Stats Grid */
-.about-stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin-top: 2.75rem;
-  background: #ffffff;
-  padding: 1.25rem 1.6rem;
-  border-radius: 14px;
-  border: 1px solid var(--line);
-  box-shadow: 0 4px 20px rgba(12, 18, 32, 0.05);
-}
-
-.about-stat-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.about-stat-number {
-  font-family: var(--font-body);
-  font-size: 1.45rem;
-  font-weight: 800;
-  color: #0d8a6a;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-
-.about-stat-label {
-  font-size: 0.76rem;
-  font-weight: 600;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-@media (max-width: 820px) {
-  .about-stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.15rem;
-    padding: 1.15rem 1.25rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.85rem;
-    padding: 0.95rem;
-  }
-  .about-stat-number {
-    font-size: 1.25rem;
-  }
-  .about-stat-label {
-    font-size: 0.72rem;
-  }
-}
-
 /* Service Card Tags */
 .svc-tags {
   display: flex;
@@ -1117,8 +1059,8 @@ code {
 
 .product-card-body h3 {
   font-family: var(--font-body);
-  font-size: 1.12rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 600;
   color: #0f172a;
   margin: 0.15rem 0 0.35rem;
   line-height: 1.35;
@@ -1313,11 +1255,12 @@ code {
 
 .more-prod-content h3 {
   font-family: var(--font-body);
-  font-size: 1.12rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 600;
   margin: 0 0 0.35rem;
   color: #0f172a;
   line-height: 1.35;
+  letter-spacing: -0.01em;
 }
 
 .more-prod-content p {
