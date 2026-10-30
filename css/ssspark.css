@@ -47,19 +47,31 @@
 .park-jumps {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem 1rem;
-  margin-top: 1.35rem;
+  gap: 0.5rem 0.65rem;
+  margin-top: 1.5rem;
 }
 
 .park-jumps a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 9999px;
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   text-decoration: none;
   color: var(--ink-soft);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .park-jumps a:hover {
+  background: var(--white);
+  border-color: var(--accent);
   color: var(--accent-deep);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(13, 138, 106, 0.15);
 }
 
 .park-order-points {
@@ -108,8 +120,9 @@
 .park-rates {
   background: var(--white);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1.25rem 1.2rem 1.35rem;
+  border-radius: 16px;
+  padding: 1.5rem 1.6rem;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.06);
 }
 
 .park-script blockquote {

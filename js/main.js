@@ -305,4 +305,67 @@
       qtyInput.value = "1";
     });
   }
+
+  /* Interactive Category Filter in Products Showcase */
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const productCards = document.querySelectorAll(".product-item-card");
+
+  if (filterBtns.length && productCards.length) {
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const filter = btn.getAttribute("data-filter");
+
+        filterBtns.forEach(function (b) {
+          b.classList.remove("is-active");
+          b.setAttribute("aria-selected", "false");
+        });
+        btn.classList.add("is-active");
+        btn.setAttribute("aria-selected", "true");
+
+        productCards.forEach(function (card) {
+          const category = card.getAttribute("data-category") || "";
+          if (filter === "all" || category.indexOf(filter) !== -1) {
+            card.style.display = "";
+            card.style.opacity = "0";
+            card.style.transform = "translateY(12px)";
+            setTimeout(function () {
+              card.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+              card.style.opacity = "1";
+              card.style.transform = "translateY(0)";
+              card.classList.add("is-visible");
+            }, 40);
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  }
+
+  /* Pre-fill Contact Form Message from Product Card CTAs */
+  const prefillBtns = document.querySelectorAll("[data-prefill]");
+  const messageArea = document.getElementById("message");
+
+  if (prefillBtns.length && messageArea) {
+    prefillBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const type = btn.getAttribute("data-prefill");
+        let prefillText = "";
+        if (type === "medical") {
+          prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and feature details for the Medical Store Desktop Application.\n\nStore Name:\nCity:\nPhone:";
+        } else if (type === "cashcount") {
+          prefillText = "Hi Shivshambhu Software team,\n\nI am interested in early access and updates for the CashCount App.\n\nPlease notify me upon release.";
+        } else if (type === "custom") {
+          prefillText = "Hi Shivshambhu Software team,\n\nI would like to discuss a custom software project for our business.\n\nProject Overview:";
+        }
+
+        if (prefillText && (!messageArea.value.trim() || messageArea.value.indexOf("Hi Shivshambhu") !== -1)) {
+          messageArea.value = prefillText;
+          setTimeout(function () {
+            messageArea.focus();
+          }, 300);
+        }
+      });
+    });
+  }
 })();
