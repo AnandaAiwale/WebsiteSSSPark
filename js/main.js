@@ -306,6 +306,90 @@
     });
   }
 
+  /* Biometric Attendance software trial request form */
+  const trialForm = document.getElementById("trial-form");
+  const trialStatus = document.getElementById("trial-status");
+
+  if (trialForm && trialStatus) {
+    trialForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nameInput = trialForm.querySelector("#trial-name");
+      const companyInput = trialForm.querySelector("#trial-company");
+      const phoneInput = trialForm.querySelector("#trial-phone");
+      const emailInput = trialForm.querySelector("#trial-email");
+      const cityInput = trialForm.querySelector("#trial-city");
+      const machineInput = trialForm.querySelector("#trial-machine");
+      const osInput = trialForm.querySelector("#trial-os");
+      const staffInput = trialForm.querySelector("#trial-staff");
+      const notesInput = trialForm.querySelector("#trial-notes");
+      const requiredFields = [nameInput, companyInput, phoneInput, emailInput, cityInput];
+
+      requiredFields.forEach(function (field) {
+        field.classList.remove("is-invalid");
+      });
+      trialStatus.hidden = true;
+      trialStatus.className = "form-status";
+
+      let valid = true;
+
+      if (!nameInput.value.trim()) {
+        nameInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!companyInput.value.trim()) {
+        companyInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      const phone = phoneInput.value.replace(/\s+/g, "");
+      if (!/^[0-9+\-()]{8,16}$/.test(phone)) {
+        phoneInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      const email = emailInput.value.trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        emailInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!cityInput.value.trim()) {
+        cityInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!valid) {
+        trialStatus.hidden = false;
+        trialStatus.classList.add("is-error");
+        trialStatus.textContent = "Please fill in your name, company, a valid phone number, email, and city.";
+        return;
+      }
+
+      var trialText =
+        "Biometric Attendance & Salary Software — 30-Day Free Trial Request\n" +
+        "===============================================================\n" +
+        "Name: " + nameInput.value.trim() + "\n" +
+        "Company / Organization: " + companyInput.value.trim() + "\n" +
+        "Phone / WhatsApp: " + phone + "\n" +
+        "Email: " + email + "\n" +
+        "City & State: " + cityInput.value.trim() + "\n" +
+        "Biometric Machine Model: " + (machineInput ? machineInput.value : "Not specified") + "\n" +
+        "Operating System: " + (osInput ? osInput.value : "Windows 10/11") + "\n" +
+        "Staff Count: " + (staffInput ? staffInput.value : "1-25") + "\n\n" +
+        "Notes / Shift Details:\n" +
+        (notesInput && notesInput.value.trim() ? notesInput.value.trim() : "None provided");
+
+      openMail("Biometric Software Trial Request from " + companyInput.value.trim(), trialText);
+      trialStatus.hidden = false;
+      trialStatus.classList.add("is-success");
+      trialStatus.textContent =
+        "Gmail opened with your 30-Day Free Trial request to shivshambhusoft@gmail.com. Press Send there.";
+      trialForm.reset();
+    });
+  }
+
   /* Interactive Category Filter in Products Showcase */
   const filterBtns = document.querySelectorAll(".filter-btn");
   const productCards = document.querySelectorAll(".product-item-card");
@@ -351,7 +435,9 @@
       btn.addEventListener("click", function () {
         const type = btn.getAttribute("data-prefill");
         let prefillText = "";
-        if (type === "medical") {
+        if (type === "biometric") {
+          prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a 30-Day Free Trial and demo for the Offline Biometric Attendance & Salary Management Desktop Software.\n\nCompany Name:\nBiometric Machine Model (e.g. eSSL, ZKTeco, Realtime):\nCity:\nPhone:";
+        } else if (type === "medical") {
           prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and feature details for the Medical Store Desktop Application.\n\nStore Name:\nCity:\nPhone:";
         } else if (type === "cashcount") {
           prefillText = "Hi Shivshambhu Software team,\n\nI am interested in early access and updates for the CashCount App.\n\nPlease notify me upon release.";

@@ -1,0 +1,644 @@
+/* ========================================================
+   SmartBiometric Attendance & Payroll Suite — Product Page
+   ======================================================== */
+
+.bio-page .section,
+.bio-page .bio-hero {
+  scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top));
+}
+
+.bio-hero {
+  padding: 3.25rem 0 2.5rem;
+  background:
+    radial-gradient(900px 420px at 50% 0%, rgba(13, 138, 106, 0.08), transparent 70%),
+    linear-gradient(180deg, #f1f6f8 0%, #ffffff 40%, #f4f8fa 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.bio-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  gap: 2.5rem 3rem;
+  align-items: center;
+}
+
+.bio-hero-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.95rem;
+  background: #e7f8f1;
+  border: 1px solid #a7f3d0;
+  border-radius: 9999px;
+  color: #065f46;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.85rem;
+  align-self: flex-start;
+}
+
+.bio-hero h1 {
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
+  line-height: 1.15;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.bio-kicker {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #0d8a6a;
+  margin: 0 0 0.95rem;
+}
+
+.bio-hero .lede {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #475569;
+  max-width: 54ch;
+  margin-bottom: 1.25rem;
+}
+
+.bio-spec-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.5rem;
+}
+
+.bio-spec-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #334155;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.bio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.bio-actions .btn {
+  font-size: 0.9rem;
+  padding: 0.65rem 1.35rem;
+}
+
+.bio-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.65rem;
+  margin-top: 0.5rem;
+}
+
+.bio-jumps a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--line);
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-decoration: none;
+  color: #334155;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.bio-jumps a:hover {
+  background: #ffffff;
+  border-color: #0d8a6a;
+  color: #065f46;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(13, 138, 106, 0.15);
+}
+
+/* App Window Frame Mockup */
+.bio-stage {
+  margin: 0;
+  position: relative;
+}
+
+.bio-window-frame {
+  background: #0f172a;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 56px -10px rgba(15, 23, 42, 0.35), 0 0 0 1px rgba(15, 23, 42, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-window-frame:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 30px 68px -10px rgba(15, 23, 42, 0.42);
+}
+
+.bio-window-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.95rem;
+  background: #1e293b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bio-window-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bio-window-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+}
+
+.bio-dot-red { background: #ef4444; }
+.bio-dot-yellow { background: #f59e0b; }
+.bio-dot-green { background: #10b981; }
+
+.bio-window-title {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.02em;
+}
+
+.bio-window-status {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.15);
+  padding: 0.18rem 0.55rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.bio-window-screen {
+  position: relative;
+  overflow: hidden;
+  background: #020617;
+  display: flex;
+}
+
+.bio-window-screen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.bio-stage-caption {
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: #64748b;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ========================================================
+   SECTION: BENEFITS GRID (Why Clients Love It)
+   ======================================================== */
+.bio-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 2.25rem 0 0;
+}
+
+.bio-benefit-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  padding: 1.45rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 14px rgba(12, 18, 32, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.bio-benefit-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0d8a6a, #2563eb);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.bio-benefit-card:hover {
+  transform: translateY(-4px);
+  border-color: #93c5fd;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.09);
+}
+
+.bio-benefit-card:hover::before {
+  opacity: 1;
+}
+
+.bio-card-icon {
+  width: 2.85rem;
+  height: 2.85rem;
+  border-radius: 10px;
+  background: #e7f8f1;
+  color: #0d8a6a;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.bio-benefit-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.45rem;
+  line-height: 1.3;
+}
+
+.bio-benefit-card p {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #475569;
+  margin: 0;
+}
+
+/* ========================================================
+   SECTION: SUPPORTED BIOMETRIC MACHINES
+   ======================================================== */
+.bio-machines-section {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.bio-machines-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.15rem;
+  margin-top: 2.25rem;
+}
+
+.bio-machine-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+}
+
+.bio-machine-card:hover {
+  transform: translateY(-3px);
+  border-color: #0d8a6a;
+  box-shadow: 0 10px 24px rgba(13, 138, 106, 0.1);
+}
+
+.bio-machine-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.bio-machine-brand {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+.bio-machine-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.18rem 0.55rem;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.bio-machine-models {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: #475569;
+  margin: 0 0 0.85rem;
+  flex: 1;
+}
+
+.bio-machine-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.bio-machine-chips span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #d1fae5;
+}
+
+/* ========================================================
+   SECTION: HOW IT WORKS (3 SIMPLE STEPS)
+   ======================================================== */
+.bio-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.25rem;
+  position: relative;
+}
+
+.bio-step-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  padding: 1.65rem 1.45rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+}
+
+.bio-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 10px;
+  background: #0d8a6a;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 1.15rem;
+  box-shadow: 0 4px 12px rgba(13, 138, 106, 0.28);
+}
+
+.bio-step-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.45rem;
+  line-height: 1.3;
+}
+
+.bio-step-card p {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #475569;
+  margin: 0;
+}
+
+.bio-step-tip {
+  margin-top: 1rem;
+  padding: 0.55rem 0.75rem;
+  background: #f8fafc;
+  border-left: 3px solid #0d8a6a;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.78rem;
+  color: #334155;
+  font-weight: 500;
+}
+
+/* ========================================================
+   SECTION: CORE FEATURES MATRIX TABLE
+   ======================================================== */
+.bio-features-section {
+  background: #ffffff;
+}
+
+.bio-feature-table-wrap {
+  margin-top: 2.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.bio-feature-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.bio-feature-table th {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 0.95rem 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.bio-feature-table th:first-child {
+  width: 28%;
+}
+
+.bio-feature-table td {
+  padding: 1.05rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  line-height: 1.55;
+  vertical-align: top;
+}
+
+.bio-feature-table tr:last-child td {
+  border-bottom: none;
+}
+
+.bio-feature-table tr:nth-child(even) td {
+  background: #fbfcfe;
+}
+
+.bio-feature-table tr:hover td {
+  background: #f0fdf9;
+}
+
+.bio-feat-name {
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bio-feat-name span {
+  font-size: 1.1rem;
+}
+
+/* ========================================================
+   SECTION: 30-DAY FREE TRIAL & DEMO REQUEST FORM
+   ======================================================== */
+.bio-trial-section {
+  background:
+    radial-gradient(240px 180px at 92% 18%, rgba(186, 230, 214, 0.7), transparent 70%),
+    radial-gradient(280px 220px at 78% 88%, rgba(214, 232, 252, 0.85), transparent 72%),
+    #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.bio-trial-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1.2fr);
+  gap: 2.5rem 3.5rem;
+  align-items: start;
+}
+
+.bio-trial-points {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.bio-trial-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.bio-trial-points li svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: #0d8a6a;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.bio-form-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1rem;
+}
+
+.bio-form-span-full {
+  grid-column: 1 / -1;
+}
+
+.bio-trust-banner {
+  margin-top: 1.75rem;
+  padding: 1rem 1.15rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.bio-trust-banner svg {
+  width: 2rem;
+  height: 2rem;
+  fill: none;
+  stroke: #0d8a6a;
+  stroke-width: 2;
+  flex-shrink: 0;
+}
+
+.bio-trust-banner p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.bio-trust-banner strong {
+  color: #0f172a;
+}
+
+/* ========================================================
+   RESPONSIVE MEDIA QUERIES
+   ======================================================== */
+@media (max-width: 960px) {
+  .bio-hero-grid,
+  .bio-trial-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .bio-benefits-grid,
+  .bio-machines-grid,
+  .bio-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .bio-hero h1 {
+    font-size: clamp(1.75rem, 6.5vw, 2.2rem);
+  }
+
+  .bio-benefits-grid,
+  .bio-machines-grid,
+  .bio-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .bio-form-grid-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-feature-table th,
+  .bio-feature-table td {
+    padding: 0.85rem 0.95rem;
+    font-size: 0.84rem;
+  }
+
+  .bio-feature-table th:first-child {
+    width: 38%;
+  }
+
+  .bio-window-bar {
+    padding: 0.5rem 0.75rem;
+  }
+}

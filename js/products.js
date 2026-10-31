@@ -23,6 +23,25 @@ window.NEXUS_PRODUCTS = [
     image: "assets/ssspark-scan-flow.jpg"
   },
   {
+    id: "biometric-attendance",
+    name: "Biometric Attendance & Salary Software",
+    tag: "Desktop Attendance & Payroll",
+    status: "Available",
+    statusClass: "status-available",
+    description: "Complete offline standalone desktop software for Indian biometric attendance machines (eSSL, ZKTeco, Hikvision). Direct USB pen drive log import, auto muster rolls, and 1-click salary payslips.",
+    highlights: [
+      "100% Standalone & offline — zero recurring cloud fees",
+      "Plug & play USB pen drive import (attlog.dat & Excel)",
+      "Automatic employee profile creation from machine logs",
+      "1-click salary payslip PDF with Indian Rupee (₹), PF & ESI"
+    ],
+    link: "biometric-attendance.html",
+    ctaText: "Explore Software",
+    secondaryLink: "biometric-attendance.html#trial",
+    secondaryCtaText: "30-Day Free Trial",
+    image: "assets/biometric-app-preview.png"
+  },
+  {
     id: "medical-store",
     name: "Medical Store Desktop Application",
     tag: "Enterprise Desktop ERP",
