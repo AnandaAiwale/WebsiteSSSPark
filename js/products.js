@@ -28,10 +28,10 @@ window.NEXUS_PRODUCTS = [
     tag: "Desktop Attendance & Payroll",
     status: "Available",
     statusClass: "status-available",
-    description: "Complete offline standalone desktop software for Indian biometric attendance machines (eSSL, ZKTeco, Hikvision). Direct USB pen drive log import, auto muster rolls, and 1-click salary payslips.",
+    description: "Complete offline standalone desktop software for all biometric attendance machines. Direct USB pen drive log import, auto muster rolls, and 1-click salary payslips.",
     highlights: [
       "100% Standalone & offline — zero recurring cloud fees",
-      "Plug & play USB pen drive import (attlog.dat & Excel)",
+      "Plug & play USB pen drive import (USB & Excel logs)",
       "Automatic employee profile creation from machine logs",
       "1-click salary payslip PDF with Indian Rupee (₹), PF & ESI"
     ],

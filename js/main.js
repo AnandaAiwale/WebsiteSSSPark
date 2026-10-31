@@ -436,7 +436,7 @@
         const type = btn.getAttribute("data-prefill");
         let prefillText = "";
         if (type === "biometric") {
-          prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a 30-Day Free Trial and demo for the Offline Biometric Attendance & Salary Management Desktop Software.\n\nCompany Name:\nBiometric Machine Model (e.g. eSSL, ZKTeco, Realtime):\nCity:\nPhone:";
+          prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a 30-Day Free Trial and demo for the Offline Biometric Attendance & Salary Management Desktop Software.\n\nCompany Name:\nBiometric Device Type (Fingerprint / Face / Card):\nCity:\nPhone:";
         } else if (type === "medical") {
           prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and feature details for the Medical Store Desktop Application.\n\nStore Name:\nCity:\nPhone:";
         } else if (type === "cashcount") {
