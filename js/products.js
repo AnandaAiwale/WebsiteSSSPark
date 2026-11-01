@@ -84,7 +84,7 @@ window.NEXUS_PRODUCTS = [
     name: "CashCount App",
     tag: "Finance & Retail Utility",
     status: "In Review",
-    statusClass: "status-review",
+    statusClass: "status-soon",
     description: "Smart cash drawer & denomination calculator for cashiers, retail counters, and merchants. Instant tally for all Indian notes (₹1000 to ₹10) and coins with day-end summary.",
     highlights: [
       "Instant currency denomination calculator (₹1 to ₹1000)",
@@ -96,7 +96,7 @@ window.NEXUS_PRODUCTS = [
     ctaText: "Request Early Access",
     secondaryLink: "#contact",
     secondaryCtaText: "Get Notified on Launch",
-    image: "assets/cashcount-preview.svg"
+    image: "assets/cashcount-preview.png?v=2"
   },
   {
     id: "upcoming",
