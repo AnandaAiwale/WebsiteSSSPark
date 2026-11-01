@@ -42,6 +42,25 @@ window.NEXUS_PRODUCTS = [
     image: "assets/biometric-app-preview.png"
   },
   {
+    id: "hotel-billing",
+    name: "Smart Hotel Billing & Management Software",
+    tag: "Desktop Hotel & Restaurant POS",
+    status: "Available",
+    statusClass: "status-available",
+    description: "100% offline desktop billing for hotels, restaurants & cafes. Create customer bills in < 2 minutes, 150+ preloaded menu items, live table/floor layout, and 1-click sales reports.",
+    highlights: [
+      "Fast customer billing in less than 2 minutes",
+      "150+ Preloaded multi-cuisine food items with photos",
+      "Interactive table & floor layout with live occupancy",
+      "100% Offline with zero recurring monthly cloud fees"
+    ],
+    link: "hotel-billing.html",
+    ctaText: "Explore Software",
+    secondaryLink: "hotel-billing.html#demo",
+    secondaryCtaText: "Request Free Demo",
+    image: "assets/hotel-billing-pos.png"
+  },
+  {
     id: "medical-store",
     name: "Medical Store Desktop Application",
     tag: "Enterprise Desktop ERP",

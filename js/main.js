@@ -390,6 +390,90 @@
     });
   }
 
+  /* Hotel billing software demo request form */
+  const hotelForm = document.getElementById("hotel-form");
+  const hotelStatus = document.getElementById("hotel-status");
+
+  if (hotelForm && hotelStatus) {
+    hotelForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nameInput = hotelForm.querySelector("#hotel-name");
+      const businessInput = hotelForm.querySelector("#hotel-business");
+      const phoneInput = hotelForm.querySelector("#hotel-phone");
+      const emailInput = hotelForm.querySelector("#hotel-email");
+      const cityInput = hotelForm.querySelector("#hotel-city");
+      const typeInput = hotelForm.querySelector("#hotel-type");
+      const tablesInput = hotelForm.querySelector("#hotel-tables");
+      const osInput = hotelForm.querySelector("#hotel-os");
+      const notesInput = hotelForm.querySelector("#hotel-notes");
+      const requiredFields = [nameInput, businessInput, phoneInput, emailInput, cityInput];
+
+      requiredFields.forEach(function (field) {
+        field.classList.remove("is-invalid");
+      });
+      hotelStatus.hidden = true;
+      hotelStatus.className = "form-status";
+
+      let valid = true;
+
+      if (!nameInput.value.trim()) {
+        nameInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!businessInput.value.trim()) {
+        businessInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      const phone = phoneInput.value.replace(/\s+/g, "");
+      if (!/^[0-9+\-()]{8,16}$/.test(phone)) {
+        phoneInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      const email = emailInput.value.trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        emailInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!cityInput.value.trim()) {
+        cityInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!valid) {
+        hotelStatus.hidden = false;
+        hotelStatus.classList.add("is-error");
+        hotelStatus.textContent = "Please fill in your name, hotel/restaurant name, a valid phone number, email, and city.";
+        return;
+      }
+
+      var hotelText =
+        "Smart Hotel Billing & Management Software — Demo Request\n" +
+        "========================================================\n" +
+        "Contact Person: " + nameInput.value.trim() + "\n" +
+        "Hotel / Restaurant Name: " + businessInput.value.trim() + "\n" +
+        "Phone / WhatsApp: " + phone + "\n" +
+        "Email: " + email + "\n" +
+        "City & State: " + cityInput.value.trim() + "\n" +
+        "Business Type: " + (typeInput ? typeInput.value : "Not specified") + "\n" +
+        "Table Count: " + (tablesInput ? tablesInput.value : "1-10 Tables") + "\n" +
+        "Operating System: " + (osInput ? osInput.value : "Windows 10/11") + "\n\n" +
+        "Special Requirements / Notes:\n" +
+        (notesInput && notesInput.value.trim() ? notesInput.value.trim() : "None provided");
+
+      openMail("Hotel Billing Software Demo Request from " + businessInput.value.trim(), hotelText);
+      hotelStatus.hidden = false;
+      hotelStatus.classList.add("is-success");
+      hotelStatus.textContent =
+        "Gmail opened with your demo request to shivshambhusoft@gmail.com. Press Send there.";
+      hotelForm.reset();
+    });
+  }
+
   /* Interactive Category Filter in Products Showcase */
   const filterBtns = document.querySelectorAll(".filter-btn");
   const productCards = document.querySelectorAll(".product-item-card");
@@ -435,7 +519,9 @@
       btn.addEventListener("click", function () {
         const type = btn.getAttribute("data-prefill");
         let prefillText = "";
-        if (type === "biometric") {
+        if (type === "hotel") {
+          prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and details for the Smart Hotel Billing & Management Software.\n\nHotel / Restaurant Name:\nCity:\nPhone:";
+        } else if (type === "biometric") {
           prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a 30-Day Free Trial and demo for the Offline Biometric Attendance & Salary Management Desktop Software.\n\nCompany Name:\nBiometric Device Type (Fingerprint / Face / Card):\nCity:\nPhone:";
         } else if (type === "medical") {
           prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and feature details for the Medical Store Desktop Application.\n\nStore Name:\nCity:\nPhone:";
