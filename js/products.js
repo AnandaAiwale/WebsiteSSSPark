@@ -61,6 +61,25 @@ window.NEXUS_PRODUCTS = [
     image: "assets/hotel-billing-pos.png"
   },
   {
+    id: "shop-manage",
+    name: "Smart Garment Shop Manager",
+    tag: "Garment Retail POS & Stock ERP",
+    status: "Available",
+    statusClass: "status-available",
+    description: "The ultimate POS billing, barcode & stock management solution for garment retailers. Track S, M, L, XL, XXL size & color matrix, scan barcodes with phone camera, and print instant dynamic UPI QR bills.",
+    highlights: [
+      "5-second fast billing & instant checkout",
+      "Specialized size & color variant matrix inventory",
+      "Smartphone camera barcode scanning (zero bulky hardware)",
+      "Dynamic UPI QR receipts & 1-tap WhatsApp sharing"
+    ],
+    link: "shop-manage.html",
+    ctaText: "Explore App",
+    secondaryLink: "shop-manage.html#demo",
+    secondaryCtaText: "Request Free Demo",
+    image: "assets/shop-manage-preview.png"
+  },
+  {
     id: "medical-store",
     name: "Medical Store Desktop Application",
     tag: "Enterprise Desktop ERP",

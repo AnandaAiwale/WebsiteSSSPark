@@ -474,6 +474,88 @@
     });
   }
 
+  /* Smart Garment Shop Manager demo request form */
+  const smForm = document.getElementById("shop-manage-form");
+  const smStatus = document.getElementById("sm-status");
+
+  if (smForm && smStatus) {
+    smForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nameInput = smForm.querySelector("#sm-name");
+      const shopInput = smForm.querySelector("#sm-shop");
+      const phoneInput = smForm.querySelector("#sm-phone");
+      const emailInput = smForm.querySelector("#sm-email");
+      const cityInput = smForm.querySelector("#sm-city");
+      const typeInput = smForm.querySelector("#sm-type");
+      const billsInput = smForm.querySelector("#sm-bills");
+      const notesInput = smForm.querySelector("#sm-notes");
+      const requiredFields = [nameInput, shopInput, phoneInput, emailInput, cityInput];
+
+      requiredFields.forEach(function (field) {
+        field.classList.remove("is-invalid");
+      });
+      smStatus.hidden = true;
+      smStatus.className = "form-status";
+
+      let valid = true;
+
+      if (!nameInput.value.trim()) {
+        nameInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!shopInput.value.trim()) {
+        shopInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      const phone = phoneInput.value.replace(/\s+/g, "");
+      if (!/^[0-9+\-()]{8,16}$/.test(phone)) {
+        phoneInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      const email = emailInput.value.trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        emailInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!cityInput.value.trim()) {
+        cityInput.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!valid) {
+        smStatus.hidden = false;
+        smStatus.classList.add("is-error");
+        smStatus.textContent = "Please fill in your name, shop/boutique name, a valid phone number, email, and city.";
+        return;
+      }
+
+      var smText =
+        "Smart Garment Shop Manager — Demo & 7-Day Trial Request\n" +
+        "======================================================\n" +
+        "Contact Person: " + nameInput.value.trim() + "\n" +
+        "Shop / Boutique Name: " + shopInput.value.trim() + "\n" +
+        "Phone / WhatsApp: " + phone + "\n" +
+        "Email: " + email + "\n" +
+        "City & State: " + cityInput.value.trim() + "\n" +
+        "Store Type: " + (typeInput ? typeInput.value : "Menswear & T-Shirts") + "\n" +
+        "Approx. Daily Bills: " + (billsInput ? billsInput.value : "1-30 Bills/Day") + "\n\n" +
+        "Special Requirements / Questions:\n" +
+        (notesInput && notesInput.value.trim() ? notesInput.value.trim() : "None provided");
+
+      openMail("Garment Shop Manager Demo Request from " + shopInput.value.trim(), smText);
+      smStatus.hidden = false;
+      smStatus.classList.add("is-success");
+      smStatus.textContent =
+        "Gmail opened with your demo request to shivshambhusoft@gmail.com. Press Send there.";
+      smForm.reset();
+    });
+  }
+
   /* Interactive Category Filter in Products Showcase */
   const filterBtns = document.querySelectorAll(".filter-btn");
   const productCards = document.querySelectorAll(".product-item-card");
@@ -519,7 +601,9 @@
       btn.addEventListener("click", function () {
         const type = btn.getAttribute("data-prefill");
         let prefillText = "";
-        if (type === "hotel") {
+        if (type === "shopmanage") {
+          prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and 7-Day Free Trial for the Smart Garment Shop Manager App.\n\nShop / Boutique Name:\nStore Type (Menswear / Boutique / Sarees / Kids):\nCity:\nPhone:";
+        } else if (type === "hotel") {
           prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and details for the Smart Hotel Billing & Management Software.\n\nHotel / Restaurant Name:\nCity:\nPhone:";
         } else if (type === "biometric") {
           prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a 30-Day Free Trial and demo for the Offline Biometric Attendance & Salary Management Desktop Software.\n\nCompany Name:\nBiometric Device Type (Fingerprint / Face / Card):\nCity:\nPhone:";
