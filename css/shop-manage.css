@@ -634,85 +634,19 @@
   margin: 0;
 }
 
-/* Demo Request Form Section */
-.sm-demo-section {
-  padding: 4.5rem 0;
-  background:
-    radial-gradient(800px 400px at 50% 0%, rgba(16, 185, 129, 0.08), transparent 70%),
-    linear-gradient(180deg, #f8fafc 0%, #f0fdf4 100%);
+/* Contact Section (matches homepage #contact left column) */
+.sm-contact-section {
+  position: relative;
+  overflow: hidden;
   border-top: 1px solid #e2e8f0;
+  background:
+    radial-gradient(220px 180px at 92% 18%, rgba(186, 230, 214, 0.7), transparent 70%),
+    radial-gradient(260px 220px at 78% 88%, rgba(214, 232, 252, 0.85), transparent 72%),
+    #f7fbfc;
 }
 
-.sm-demo-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
-  gap: 2.5rem 3.5rem;
-  align-items: flex-start;
-  margin-top: 2.75rem;
-}
-
-.sm-demo-perks {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.sm-perk-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 1.25rem 1.35rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
-}
-
-.sm-perk-icon {
-  font-size: 1.6rem;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.sm-perk-text h4 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin: 0 0 0.25rem;
-}
-
-.sm-perk-text p {
-  font-size: 0.88rem;
-  color: #64748b;
-  line-height: 1.45;
-  margin: 0;
-}
-
-.sm-form-card {
-  background: #ffffff;
-  border: 1px solid #d1fae5;
-  border-radius: 20px;
-  padding: 2.25rem;
-  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
-}
-
-.sm-form-card h3 {
-  font-size: 1.45rem;
-  font-weight: 750;
-  color: #0f172a;
-  margin: 0 0 0.35rem;
-}
-
-.sm-form-card .form-subtitle {
-  font-size: 0.9rem;
-  color: #64748b;
-  margin: 0 0 1.5rem;
-}
-
-.sm-form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+.sm-contact-intro {
+  max-width: 620px;
 }
 
 /* Responsive adjustments */
@@ -739,10 +673,6 @@
   .sm-matrix-callout {
     grid-template-columns: 1fr;
   }
-
-  .sm-demo-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 640px) {
@@ -752,13 +682,5 @@
 
   .sm-phone-mockup.back-phone {
     display: none;
-  }
-
-  .sm-form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .sm-form-card {
-    padding: 1.5rem;
   }
 }
