@@ -19,7 +19,7 @@ window.SHOP_MANAGE_APK_CONFIG = {
   fileSize: "35.6 MB",
   lastUpdated: "November 12, 2026",
   minAndroid: "Android 7.0+",
-  apkUrl: "downloads/app-release.apk?v=2",
+  apkUrl: "downloads/app-release.apk?v=3",
   apkFileName: "Smart-Garment-Shop-Manager-v1.0.apk"
 };
 
