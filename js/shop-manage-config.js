@@ -16,10 +16,10 @@ window.SHOP_MANAGE_APK_CONFIG = {
   packageId: "com.shivshambhusoftware.shopmanger",
   version: "v1.0",
   versionCode: 1,
-  fileSize: "35.6 MB",
+  fileSize: "35.9 MB",
   lastUpdated: "November 12, 2026",
   minAndroid: "Android 7.0+",
-  apkUrl: "downloads/app-release.apk?v=3",
+  apkUrl: "downloads/app-release.apk?v=4",
   apkFileName: "Smart-Garment-Shop-Manager-v1.0.apk"
 };
 
