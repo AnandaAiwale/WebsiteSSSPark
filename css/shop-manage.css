@@ -654,12 +654,12 @@
    ======================================================== */
 
 .sm-download-plans-section {
-  padding: 4.5rem 0;
+  padding: 2.25rem 0 4rem;
   background:
     radial-gradient(850px 360px at 15% 0%, rgba(124, 58, 237, 0.07), transparent 70%),
     radial-gradient(750px 340px at 85% 20%, rgba(16, 185, 129, 0.06), transparent 70%),
     linear-gradient(180deg, #ffffff 0%, #faf8ff 50%, #ffffff 100%);
-  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .sm-purple-pill {
@@ -685,7 +685,7 @@
 
 /* 1. Download APK Card */
 .sm-apk-card {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   background: #ffffff;
   border: 1px solid #e9d5ff;
   border-radius: 22px;
