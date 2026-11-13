@@ -26,7 +26,7 @@
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css?v=2.5" />
-  <link rel="stylesheet" href="css/shop-manage.css?v=1.3" />
+  <link rel="stylesheet" href="css/shop-manage.css?v=1.4" />
 
   <!-- Structured Data (SEO) -->
   <script type="application/ld+json">
@@ -268,6 +268,9 @@
                 <span class="sm-plan-amount">₹0</span>
                 <span class="sm-plan-period">/ 7 Days</span>
               </div>
+              <div class="sm-plan-renewal-badge badge-trial">
+                <span>✨</span> 100% Free • All Features Unlocked
+              </div>
               <ul class="sm-plan-features">
                 <li><span class="sm-plan-check" aria-hidden="true">✔</span><span>Full application access.</span></li>
                 <li><span class="sm-plan-check" aria-hidden="true">✔</span><span>Add products.</span></li>
@@ -278,16 +281,20 @@
                 <li><span class="sm-plan-check" aria-hidden="true">✔</span><span>Explore application features.</span></li>
               </ul>
               <a class="btn-plan btn-plan-trial" href="#download">Start 7-Day Free Trial</a>
+              <p class="sm-plan-renewal-note trial-note">No payment required. Automatically starts upon Email OTP login.</p>
             </article>
 
             <!-- Plan 2: Annual Subscription -->
             <article class="sm-plan-card plan-featured reveal">
-              <span class="sm-plan-tag tag-popular">Most Popular • Full Updates</span>
+              <span class="sm-plan-tag tag-popular">Most Popular • Full Year</span>
               <h4>Annual Subscription</h4>
               <p class="sm-plan-duration">Validity: 1 Full Year (365 Days)</p>
               <div class="sm-plan-price">
                 <span class="sm-plan-amount">₹3,999</span>
-                <span class="sm-plan-period">/ Year</span>
+                <span class="sm-plan-period">/ 1st Year</span>
+              </div>
+              <div class="sm-plan-renewal-badge badge-popular">
+                <span>🔁</span> Renews at ₹1,999/Year for life (Save 50%)
               </div>
               <ul class="sm-plan-features">
                 <li><span class="sm-plan-check" aria-hidden="true">✔</span><span>Full application access.</span></li>
@@ -299,17 +306,21 @@
                 <li><span class="sm-plan-check" aria-hidden="true">✔</span><span>Regular updates.</span></li>
                 <li><span class="sm-plan-check" aria-hidden="true">✔</span><span>One-year subscription validity.</span></li>
               </ul>
-              <a class="btn-plan btn-plan-primary" href="#subscription-flow">Subscribe Now</a>
+              <a class="btn-plan btn-plan-primary" href="#subscription-flow">Subscribe for 1 Year</a>
+              <p class="sm-plan-renewal-note renewal-popular"><strong>* 50% Renewal Discount:</strong> Pay ₹3,999 in Year 1. Year 2 onwards renews at just <strong>₹1,999 / Year</strong> for lifetime!</p>
             </article>
 
-            <!-- Plan 3: Lifetime Access (Yearly Billing Clarification Included) -->
+            <!-- Plan 3: 6-Month Plan (Half-Yearly) -->
             <article class="sm-plan-card reveal">
-              <span class="sm-plan-tag tag-annual-alt">Yearly Renewal Plan *</span>
-              <h4>Lifetime Access</h4>
-              <p class="sm-plan-duration">Billing Cycle: ₹1,999 billed yearly *</p>
+              <span class="sm-plan-tag tag-annual-alt">Flexible Half-Yearly Plan</span>
+              <h4>6-Month Plan</h4>
+              <p class="sm-plan-duration">Validity: 6 Months (180 Days)</p>
               <div class="sm-plan-price">
                 <span class="sm-plan-amount">₹1,999</span>
-                <span class="sm-plan-period">/ Year</span>
+                <span class="sm-plan-period">/ 6 Months</span>
+              </div>
+              <div class="sm-plan-renewal-badge badge-six">
+                <span>🔁</span> Future renewals at ₹1,999/Year for life
               </div>
               <ul class="sm-plan-features">
                 <li><span class="sm-plan-check" aria-hidden="true">✔</span><span>Full application access.</span></li>
@@ -320,13 +331,22 @@
                 <li><span class="sm-plan-check" aria-hidden="true">✔</span><span>Stock reports.</span></li>
                 <li><span class="sm-plan-check" aria-hidden="true">✔</span><span>Business management features.</span></li>
               </ul>
-              <a class="btn-plan btn-plan-outline" href="#subscription-flow">Get Lifetime Access</a>
-              <p class="sm-plan-renewal-note">* Yearly payment of ₹1,999 / Year (1-year renewal validity; not a permanent one-time lifetime license).</p>
+              <a class="btn-plan btn-plan-outline" href="#subscription-flow">Subscribe for 6 Months</a>
+              <p class="sm-plan-renewal-note renewal-six"><strong>* Lifetime Renewal Benefit:</strong> Pay ₹1,999 for first 6 months. Thereafter, renew annually at only <strong>₹1,999 / Year</strong> for life!</p>
             </article>
           </div>
 
           <div class="sm-validity-notice">
-            <strong>* Subscription Validity &amp; Renewal Clarification:</strong> The <strong>Free Trial</strong> provides ₹0 access for 7 days from first OTP registration. The <strong>Annual Subscription (₹3,999 / Year)</strong> includes 1-year commercial validity with purchase management, business reports, and regular updates, renewing annually. The <strong>₹1,999 / Year</strong> option listed under <em>Lifetime Access</em> follows an <strong>annual billing cycle (1-year validity per yearly payment)</strong> rather than a permanent one-time payment — please review the exact renewal terms inside the app before confirming payment, or <a href="#demo">contact Shivshambhu Software</a> for clarification.
+            <div class="sm-validity-notice-head">
+              <span aria-hidden="true">💡</span>
+              <span>Subscription Validity &amp; Lifetime Loyalty Renewal Explained</span>
+            </div>
+            <ul class="sm-validity-notice-list">
+              <li><strong>7-Day Free Trial (₹0):</strong> Enjoy complete, unrestricted application access for 7 days upon first Email OTP verification. Test in your store with zero risk.</li>
+              <li><strong>1-Year Subscription (₹3,999 for Year 1):</strong> Full 365-day commercial access with product &amp; variant inventory, camera barcode billing, purchase tracking, business reports, and regular updates. <em>You only pay ₹3,999 once in your first year.</em></li>
+              <li><strong>6-Month Subscription (₹1,999 for 6 Months):</strong> Convenient half-yearly plan (180 days) for retailers who want a flexible option to start.</li>
+              <li><strong>Lifetime Renewal Guarantee (₹1,999 / Year for Life):</strong> Whichever paid plan you choose (1-Year or 6-Month), you automatically unlock our permanent customer loyalty rate! All subsequent yearly renewals are capped at only <strong>₹1,999 / Year</strong> instead of ₹3,999. You never pay the ₹3,999 price again.</li>
+            </ul>
           </div>
         </div>
 
@@ -395,11 +415,11 @@
 
             <details class="sm-faq-item reveal">
               <summary>
-                <span>4. What happens after the free trial?</span>
+                <span>4. What happens after the free trial? How does subscription renewal work?</span>
                 <span class="sm-faq-toggle" aria-hidden="true">+</span>
               </summary>
               <div class="sm-faq-answer">
-                <p>Select an available subscription plan directly inside the application to continue using the application seamlessly after payment verification.</p>
+                <p>After your 7-day free trial, you can select either the <strong>Annual Subscription (₹3,999 / 1st Year)</strong> or the <strong>6-Month Plan (₹1,999 / 6 Months)</strong> directly inside the application. Whichever plan you choose, you automatically unlock our lifetime customer loyalty rate: all subsequent annual renewals are permanently capped at only <strong>₹1,999 / Year</strong> (you only pay ₹3,999 once in Year 1)!</p>
               </div>
             </details>
 
