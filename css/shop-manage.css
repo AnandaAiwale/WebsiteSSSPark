@@ -1068,8 +1068,8 @@
 
 .sm-pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.75rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
   align-items: stretch;
 }
 
@@ -1078,7 +1078,7 @@
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 20px;
-  padding: 2rem 1.75rem;
+  padding: 1.85rem 1.25rem;
   box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
   display: flex;
   flex-direction: column;
@@ -1116,6 +1116,12 @@
   border: 1px solid #a7f3d0;
 }
 
+.sm-plan-tag.tag-monthly {
+  background: #f0fdfa;
+  color: #0f766e;
+  border: 1px solid #99f6e4;
+}
+
 .sm-plan-tag.tag-popular {
   background: #6d28d9;
   color: #ffffff;
@@ -1128,14 +1134,14 @@
 }
 
 .sm-plan-card h4 {
-  font-size: 1.35rem;
+  font-size: 1.28rem;
   font-weight: 800;
   color: #0f172a;
   margin: 0 0 0.25rem;
 }
 
 .sm-plan-duration {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   font-weight: 600;
   color: #64748b;
   margin: 0 0 1.15rem;
@@ -1151,7 +1157,7 @@
 }
 
 .sm-plan-amount {
-  font-size: 2.35rem;
+  font-size: 2.15rem;
   font-weight: 800;
   color: #0f172a;
   line-height: 1;
@@ -1263,6 +1269,12 @@
   border: 1px solid #a7f3d0;
 }
 
+.sm-plan-renewal-badge.badge-monthly {
+  background: #f0fdfa;
+  color: #0f766e;
+  border: 1px solid #99f6e4;
+}
+
 .sm-plan-renewal-badge.badge-popular {
   background: #f5f3ff;
   color: #5b21b6;
@@ -1285,6 +1297,12 @@
   padding: 0.55rem 0.75rem;
   line-height: 1.45;
   text-align: center;
+}
+
+.sm-plan-renewal-note.renewal-monthly {
+  background: #f0fdfa;
+  border-color: #99f6e4;
+  color: #0f766e;
 }
 
 .sm-plan-renewal-note.renewal-popular {
@@ -1360,6 +1378,340 @@
   font-style: normal;
   color: #6d28d9;
   font-weight: 700;
+}
+
+/* Subscription Renewal & 60-Day Data Retention Policy */
+.sm-policy-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.sm-timeline-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid #7c3aed;
+  border-radius: 16px;
+  padding: 1.5rem 1.65rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sm-timeline-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(109, 40, 217, 0.08);
+}
+
+.sm-timeline-card.sm-timeline-featured {
+  border-left: 5px solid #10b981;
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 45%);
+  border-color: #a7f3d0 #e2e8f0 #e2e8f0 #10b981;
+}
+
+.sm-timeline-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  align-self: flex-start;
+}
+
+.sm-timeline-badge.phase-active {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.sm-timeline-badge.phase-reminder {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.sm-timeline-badge.phase-inactive {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.sm-timeline-badge.phase-safe {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+.sm-timeline-badge.phase-deletion {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.sm-timeline-card h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.sm-timeline-card p {
+  font-size: 0.94rem;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.sm-app-notice-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.35rem;
+}
+
+.sm-app-notice-box.notice-active {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.sm-app-notice-box.notice-warning {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+
+.sm-app-notice-box.notice-danger {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.sm-app-notice-box.notice-safe {
+  background: #ecfdf5;
+  border: 1.5px solid #10b981;
+}
+
+.sm-app-notice-box.notice-muted {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.notice-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  color: #1e293b;
+}
+
+.notice-quote {
+  margin: 0;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.5;
+  font-style: italic;
+  padding-left: 0.75rem;
+  border-left: 3px solid #7c3aed;
+}
+
+.notice-warning .notice-quote {
+  border-left-color: #d97706;
+  color: #92400e;
+}
+
+.notice-danger .notice-quote {
+  border-left-color: #dc2626;
+  color: #991b1b;
+}
+
+.notice-safe .notice-quote {
+  border-left-color: #059669;
+  color: #065f46;
+}
+
+.notice-msg {
+  font-size: 0.88rem;
+  color: #475569;
+  margin: 0;
+}
+
+/* Renewal Options Section */
+.sm-renewal-options-section {
+  background: #faf8ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 20px;
+  padding: 2rem 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.sm-policy-box-head {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.sm-policy-box-head h4 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0.35rem 0 0.35rem;
+}
+
+.sm-policy-box-head p {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.sm-renewal-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.sm-renewal-opt-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 4px 16px rgba(109, 40, 217, 0.05);
+}
+
+.sm-opt-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: #f5f3ff;
+  color: #6d28d9;
+  border: 1px solid #ddd6fe;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+}
+
+.sm-renewal-opt-card h5 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.sm-renewal-opt-card > p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.sm-opt-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 0.35rem;
+}
+
+.sm-opt-choice {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.sm-opt-choice.choice-best {
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
+}
+
+.opt-num {
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6d28d9;
+}
+
+.choice-best .opt-num {
+  color: #047857;
+}
+
+.sm-opt-choice strong {
+  font-size: 0.96rem;
+  color: #0f172a;
+}
+
+.sm-opt-choice p {
+  font-size: 0.86rem;
+  color: #475569;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Renewal Logic Grid */
+.sm-renewal-logic-section {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.sm-renewal-logic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.sm-logic-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.35rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.sm-logic-card:hover {
+  transform: translateY(-2px);
+  border-color: #7c3aed;
+}
+
+.sm-logic-ico {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.sm-logic-card h6 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.sm-logic-card p {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* 4. 12-Step Subscription Registration Flow */
@@ -1485,6 +1837,16 @@
   font-weight: 600;
 }
 
+@media (max-width: 1100px) {
+  .sm-pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm-renewal-logic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 960px) {
   .sm-hero-grid {
@@ -1519,6 +1881,10 @@
     grid-template-columns: 1fr;
   }
 
+  .sm-renewal-options-grid {
+    grid-template-columns: 1fr;
+  }
+
   .sm-flow-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1539,6 +1905,15 @@
 
   .sm-flow-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sm-renewal-logic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sm-renewal-options-section,
+  .sm-renewal-logic-section {
+    padding: 1.5rem 1.15rem;
   }
 
   .sm-trial-spotlight {
