@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="100% offline desktop Hotel Billing & Management Software for Windows & Mac. Fast billing in < 2 mins, 150+ preloaded menu items, table/floor layout, KOT, and sales reports." />
-  <meta name="theme-color" content="#0c1220" />
-  <title>Smart Hotel Billing &amp; Management Software | Shivshambhu</title>
+  <meta name="description" content="Hotel Billing Software — The smartest 100% offline Android Restaurant POS & Billing app. Tableside KOT, 58mm/80mm Bluetooth thermal printing, color-coded tables, and zero internet downtime." />
+  <meta name="theme-color" content="#b91c1c" />
+  <title>Hotel Billing Software — 100% Offline Android Restaurant POS &amp; Billing App | Shivshambhu</title>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Smart Hotel Billing &amp; Management Software — 100% Offline POS" />
-  <meta property="og:description" content="Create bills in < 2 mins, manage 150+ menu items, track table occupancy, expenses, and sales. No internet required!" />
-  <meta property="og:image" content="assets/hotel-billing-pos.png" />
+  <meta property="og:title" content="Hotel Billing Software — 100% Offline Android POS | Shivshambhu" />
+  <meta property="og:description" content="Manage dine-in tables, tableside KOT, Bluetooth thermal printing, and sales reports locally on your Android device with zero internet dependency." />
+  <meta property="og:image" content="assets/hotel-app-preview.svg" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=2.3" />
@@ -22,11 +22,37 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css?v=2.5" />
-  <link rel="stylesheet" href="css/hotel.css?v=1.0" />
+  <link rel="stylesheet" href="css/hotel.css?v=1.1" />
+
+  <!-- Schema.org SoftwareApplication JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Hotel Billing Software — 100% Offline Android POS",
+    "operatingSystem": "Android 7.0 and up",
+    "applicationCategory": "BusinessApplication",
+    "description": "Standalone offline restaurant POS application for Android phones and tablets. Features dynamic color-coded table management, instant KOT order taking, ESC/POS Bluetooth thermal printing, and comprehensive sales analytics.",
+    "fileSize": "12.5MB",
+    "downloadUrl": "https://shivshambhusoft.in/downloads/hotel-billing.apk",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "description": "7-day free trial included on direct APK download"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Shiv Shambhu Software",
+      "telephone": "+91 9604200066",
+      "email": "shivshambhusoft@gmail.com"
+    }
+  }
+  </script>
 </head>
 <body class="product-page hotel-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -47,8 +73,10 @@
         <ul>
           <li><a href="index.html#home">Home</a></li>
           <li><a href="index.html#products" aria-current="page">Products</a></li>
+          <li><a href="#download">Download APK</a></li>
+          <li><a href="#features">Features</a></li>
           <li><a href="#screenshots">Screenshots</a></li>
-          <li><a href="#features">Key Features</a></li>
+          <li><a href="#how-it-works">Activation</a></li>
           <li><a href="#who-can-use">Who Can Use</a></li>
           <li><a href="#demo" class="nav-cta-link">Free Demo</a></li>
         </ul>
@@ -57,370 +85,523 @@
   </header>
 
   <main id="main">
-    <!-- Hero Section -->
-    <section class="hotel-hero" aria-labelledby="hotel-title">
+    <!-- 1. Download App & Direct APK Section (Top Priority) -->
+    <section class="section hotel-download-plans-section" id="download" aria-labelledby="download-plans-title">
+      <div class="container">
+        <div class="section-head text-center">
+          <div class="hotel-amber-pill">
+            <span class="pill-dot"></span>
+            <span>📲 Official Android App • 7-Day Free Trial Included</span>
+          </div>
+          <h2 id="download-plans-title">Download App &amp; <span>100% Offline POS</span></h2>
+          <p class="lede">Download the official Hotel Billing Software Android APK directly to your phone or tablet. Enjoy full access with zero internet required.</p>
+        </div>
+
+        <!-- Download Android App Card -->
+        <article class="hotel-apk-card" aria-labelledby="hotel-apk-card-title">
+          <div class="hotel-apk-main">
+            <div class="hotel-apk-header">
+              <div class="hotel-apk-logo-wrap">
+                <img class="hotel-apk-logo" src="assets/hotel-billing-logo.png" alt="Hotel Billing Software app logo" width="76" height="76" />
+              </div>
+              <div class="hotel-apk-title-group">
+                <span class="hotel-apk-verified">✔ Official Release APK</span>
+                <h3 id="hotel-apk-card-title">Hotel Billing Software</h3>
+              </div>
+            </div>
+
+            <p class="hotel-apk-desc">The smartest standalone 100% offline Point of Sale (POS) system for Restaurants, Hotels, Cafes, Dhabas, Food Trucks, Messes, and Bars. Take tableside KOT, print thermal receipts, and track daily sales without Wi-Fi.</p>
+
+            <div class="hotel-apk-meta-grid">
+              <div class="hotel-apk-meta-item">
+                <span class="hotel-apk-meta-label">Latest Version</span>
+                <strong data-hotel-apk-version>v1.0</strong>
+              </div>
+              <div class="hotel-apk-meta-item">
+                <span class="hotel-apk-meta-label">APK File Size</span>
+                <strong data-hotel-apk-size>12.5 MB</strong>
+              </div>
+              <div class="hotel-apk-meta-item">
+                <span class="hotel-apk-meta-label">Last Updated</span>
+                <strong data-hotel-apk-updated>November 14, 2026</strong>
+              </div>
+              <div class="hotel-apk-meta-item">
+                <span class="hotel-apk-meta-label">Requirement</span>
+                <strong data-hotel-apk-android>Android 7.0+</strong>
+              </div>
+            </div>
+
+            <div class="hotel-apk-cta-row">
+              <a class="btn-apk-download-hb" id="hotel-apk-download-btn" data-hotel-apk-download href="downloads/hotel-billing.apk?v=1" download="Hotel-Billing-Software-v1.0.apk">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><polyline points="7 11 12 16 17 11"/><path d="M5 20h14"/></svg>
+                <span>Download APK</span>
+                <span class="sm-apk-btn-sub">(<span data-hotel-apk-version>v1.0</span> • <span data-hotel-apk-size>12.5 MB</span>)</span>
+              </a>
+              <a class="btn-whatsapp-hb" href="https://wa.me/919604200066?text=Hi%20Shivshambhu%20Software,%20I%20am%20interested%20in%20Hotel%20Billing%20Software%20Android%20POS.%20Please%20guide%20me." target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>WhatsApp: +91 9604200066</span>
+              </a>
+            </div>
+
+            <p class="form-status" id="hotel-download-feedback" role="status" aria-live="polite" hidden></p>
+
+            <div class="hotel-apk-note">
+              <span aria-hidden="true">🛡️</span>
+              <span><strong>Official Direct APK:</strong> Download directly from our secure website. If Android prompts during installation, enable <em>"Install Unknown Apps"</em> in settings.</span>
+            </div>
+          </div>
+
+          <aside class="hotel-install-box" aria-label="Android installation instructions">
+            <h4><span aria-hidden="true">🤖</span> Easy Installation (4 Steps)</h4>
+            <ol class="hotel-install-steps">
+              <li>
+                <span class="hotel-install-num">1</span>
+                <span>Tap <strong>Download APK</strong> above to save <span data-hotel-apk-filename>Hotel-Billing-Software-v1.0.apk</span> to your device.</span>
+              </li>
+              <li>
+                <span class="hotel-install-num">2</span>
+                <span>Open your notification drawer or <strong>Downloads</strong> folder and tap the APK file.</span>
+              </li>
+              <li>
+                <span class="hotel-install-num">3</span>
+                <span>If prompted, choose <strong>Settings &rarr; Allow from this source</strong> (Install Unknown Apps).</span>
+              </li>
+              <li>
+                <span class="hotel-install-num">4</span>
+                <span>Tap <strong>Install</strong>, launch the app, and start your 7-day full free trial immediately.</span>
+              </li>
+            </ol>
+            <div class="hotel-install-trust">
+              <span aria-hidden="true">🔒</span>
+              <span>100% Verified APK • Built by Shiv Shambhu Software</span>
+            </div>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2. Hero Section with Live Dual Phone Mockups -->
+    <section class="hotel-hero" aria-labelledby="hotel-hero-title">
       <div class="container hotel-hero-grid">
         <div class="hotel-hero-copy">
-          <div class="hotel-badge-pill">
-            <span class="hotel-badge-dot"></span>
-            <span>Available • 100% Offline POS</span>
+          <div class="hotel-amber-pill">
+            <span class="pill-dot"></span>
+            <span>The Smartest 100% Offline Restaurant POS &amp; Billing App</span>
           </div>
-          <h1 id="hotel-title">Smart Hotel Billing &amp; Management Software</h1>
-          <p class="hotel-kicker">Manage Your Hotel Smartly – Fast, Easy &amp; 100% Offline!</p>
-          <p class="lede">Simplify your hotel and restaurant operations with our powerful Desktop Hotel Billing &amp; Management Software. Create customer bills in less than 2 minutes, manage menus with 150+ preloaded dishes, track daily sales, control expenses, and organize hotel tables and floor layouts—all from one offline application.</p>
+          <h1 id="hotel-hero-title">Never Let Internet Outages <span>Stop Your Hotel Business</span></h1>
+          <p class="hotel-kicker">Manage Tables, Fire KOTs &amp; Print Thermal Bills from Android Mobile</p>
+          <p class="hotel-hero-desc">Manage dine-in tables, take rapid kitchen orders (KOT), print Bluetooth thermal receipts, and track daily sales — right from your Android phone or tablet without any internet connection or cloud server!</p>
 
-          <div class="hotel-spec-chips">
-            <span class="hotel-spec-chip">⚡ &lt; 2 Min Fast Billing</span>
-            <span class="hotel-spec-chip">🍽️ 150+ Preloaded Dishes</span>
-            <span class="hotel-spec-chip">🪑 Table &amp; Floor Layout</span>
-            <span class="hotel-spec-chip">🔒 100% Offline (No Internet)</span>
-            <span class="hotel-spec-chip">🇮🇳 English • हिंदी • मराठी</span>
-            <span class="hotel-spec-chip">💻 Windows &amp; Mac</span>
-          </div>
-
-          <div class="hotel-actions">
-            <a class="btn btn-hotel-primary" href="#demo">Request Free Demo <span aria-hidden="true">→</span></a>
-            <a class="btn btn-line" href="#screenshots">View Live Screenshots</a>
-          </div>
-
-          <nav class="hotel-jumps" aria-label="Quick links on this page">
-            <a href="#screenshots">Live Screenshots</a>
-            <a href="#features">Core Features</a>
-            <a href="#who-can-use">Who Can Use</a>
-            <a href="#demo">Request Free Demo</a>
-          </nav>
-        </div>
-
-        <figure class="hotel-stage">
-          <div class="hotel-window-frame">
-            <div class="hotel-window-bar">
-              <div class="hotel-window-dots" aria-hidden="true">
-                <span class="hotel-dot-red"></span>
-                <span class="hotel-dot-yellow"></span>
-                <span class="hotel-dot-green"></span>
-              </div>
-              <span class="hotel-window-title">हॉटेल जय मल्हार - Hotel Jay Malhar POS — Desktop Edition</span>
-              <span class="hotel-window-status">100% Offline</span>
-            </div>
-            <div class="hotel-window-screen">
-              <img src="assets/hotel-billing-pos.png" alt="Smart Hotel Billing Software POS screen showing 150 preloaded dishes with real photos, category filters, and quick Dine-in/Parcel billing pane." width="1024" height="591" />
-            </div>
-          </div>
-          <p class="hotel-stage-caption">Actual software screenshot: High-speed POS billing with preloaded food dishes, Veg &amp; Non-Veg filters, item codes, and instant order settling.</p>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Section 1: In-Depth Live Software Screenshots -->
-    <section class="section hotel-screens-section" id="screenshots">
-      <div class="container">
-        <div class="section-head text-center">
-          <p class="eyebrow">Real Software Interface</p>
-          <h2>Designed for lightning-fast <span>hotel operations</span></h2>
-          <p class="lede">Explore the actual desktop interface built to handle peak rush hours, multi-table orders, and rapid customer checkout.</p>
-        </div>
-
-        <div class="hotel-screens-grid">
-          <!-- Screen 1: POS Billing Engine -->
-          <article class="hotel-screen-card reveal">
-            <div class="hotel-screen-media">
-              <img src="assets/hotel-billing-pos.png" alt="Fast Customer POS Billing screen with preloaded dishes, item photos, and billing panel" width="1024" height="591" loading="lazy" />
-            </div>
-            <div class="hotel-screen-body">
-              <span class="hotel-screen-tag">Module 1 • Point of Sale</span>
-              <h3>High-Speed POS Billing &amp; Menu Catalog</h3>
-              <p>Create accurate bills in less than 2 minutes. Features 150+ ready-to-use menu items with real food photos, instant dish search, and automated GST/discount calculations.</p>
-              <ul class="hotel-screen-features">
-                <li><span>✔</span> <strong>150+ Preloaded Items:</strong> Ready-to-serve Veg &amp; Non-Veg dishes with custom price updates.</li>
-                <li><span>✔</span> <strong>Dine-In &amp; Parcel:</strong> Instant 1-touch switching between dine-in tables and takeaway parcels.</li>
-                <li><span>✔</span> <strong>Kitchen KOT Dispatch:</strong> Send orders to the kitchen instantly with waiter/captain tagging.</li>
-                <li><span>✔</span> <strong>Instant Bill Printing:</strong> Thermal receipt &amp; standard invoice printing with GST breakdown.</li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- Screen 2: Table & Floor Layout Management -->
-          <article class="hotel-screen-card reveal">
-            <div class="hotel-screen-media">
-              <img src="assets/hotel-tables-floor.png" alt="Table and Floor Layout Management screen showing occupied tables and quick rush-hour order popup" width="1024" height="585" loading="lazy" />
-            </div>
-            <div class="hotel-screen-body">
-              <span class="hotel-screen-tag">Module 2 • Floor Layouts</span>
-              <h3>Interactive Table &amp; Floor Management</h3>
-              <p>Visually organize your hotel dining area. Track table occupancy in real time, manage rush-hour orders with quick pop-ups, and transfer tables with a single click.</p>
-              <ul class="hotel-screen-features">
-                <li><span>✔</span> <strong>Custom Floor Layouts:</strong> Organize Family AC, Non-AC, Garden, and Rooftop sections.</li>
-                <li><span>✔</span> <strong>Live Occupancy Status:</strong> Color-coded indicators for Available, Occupied, and Billed tables.</li>
-                <li><span>✔</span> <strong>Rush-Hour Quick Order:</strong> Add items, update quantities (+ / -), and send KOTs on the fly.</li>
-                <li><span>✔</span> <strong>Multi-Language Comfort:</strong> Operate smoothly in English, Hindi (हिंदी), or Marathi (मराठी).</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 2: Key Features Grid -->
-    <section class="section" id="features">
-      <div class="container">
-        <div class="section-head text-center">
-          <p class="eyebrow">Key Capabilities</p>
-          <h2>Everything your hotel needs to <span>grow and profit</span></h2>
-          <p class="lede">No complicated setups. All your operations, billing, inventory, and accounts in one clean desktop application.</p>
-        </div>
-
-        <ul class="hotel-benefits-grid">
-          <!-- Feature 1 -->
-          <li class="hotel-benefit-card reveal">
-            <div class="hotel-card-icon" aria-hidden="true">⚡</div>
-            <h3>Fast Customer Billing</h3>
-            <p>Generate customer invoices in under 2 minutes. Quickly add menu items, adjust quantities, apply discounts, and print clean GST receipts without keeping customers waiting.</p>
-          </li>
-
-          <!-- Feature 2 -->
-          <li class="hotel-benefit-card reveal">
-            <div class="hotel-card-icon" aria-hidden="true">🍽️</div>
-            <h3>150+ Preloaded Menu Items</h3>
-            <p>Comes preloaded with more than 150 popular Indian starters, main courses, rotis, rice, and beverages. Easily modify prices to match your hotel menu or add your own specialty dishes.</p>
-          </li>
-
-          <!-- Feature 3 -->
-          <li class="hotel-benefit-card reveal">
-            <div class="hotel-card-icon" aria-hidden="true">🪑</div>
-            <h3>Table &amp; Floor Management</h3>
-            <p>Customize your hotel floor plan to match your physical structure. Monitor table availability, see which tables are occupied, manage running table tabs, and transfer tables effortlessly.</p>
-          </li>
-
-          <!-- Feature 4 -->
-          <li class="hotel-benefit-card reveal">
-            <div class="hotel-card-icon" aria-hidden="true">📊</div>
-            <h3>One-Click Sales Reports</h3>
-            <p>Track your daily, weekly, and monthly business revenue. Analyze best-selling food items, peak dining hours, payment modes, and overall hotel profitability in a single click.</p>
-          </li>
-
-          <!-- Feature 5 -->
-          <li class="hotel-benefit-card reveal">
-            <div class="hotel-card-icon" aria-hidden="true">💰</div>
-            <h3>Expense &amp; Cost Control</h3>
-            <p>Record daily vegetable, dairy, grocery, and gas purchases. Track operational costs, vendor payouts, and staff advances to maintain full visibility over your restaurant profit margins.</p>
-          </li>
-
-          <!-- Feature 6 -->
-          <li class="hotel-benefit-card reveal">
-            <div class="hotel-card-icon" aria-hidden="true">🇮🇳</div>
-            <h3>Three-Language Support</h3>
-            <p>Switch between <strong>English</strong>, <strong>Hindi (हिंदी)</strong>, and <strong>Marathi (मराठी)</strong> instantly. Empowers captains, cashiers, and kitchen supervisors to operate with total ease.</p>
-          </li>
-
-          <!-- Feature 7 -->
-          <li class="hotel-benefit-card reveal">
-            <div class="hotel-card-icon" aria-hidden="true">🔒</div>
-            <h3>100% Offline &amp; Private</h3>
-            <p>Zero internet required. No recurring monthly cloud subscription bills. All your customer contact details, daily bills, and sales data remain 100% safe on your local computer.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Section 3: Who Can Use This Software -->
-    <section class="section hotel-users-section" id="who-can-use">
-      <div class="container">
-        <div class="section-head text-center">
-          <p class="eyebrow">Versatile Solution</p>
-          <h2>Who can use <span>Smart Hotel Billing?</span></h2>
-          <p class="lede">Engineered specifically for the Indian food service and hospitality industry.</p>
-        </div>
-
-        <div class="hotel-users-grid">
-          <!-- User 1 -->
-          <div class="hotel-user-card reveal">
-            <div class="hotel-user-icon" aria-hidden="true">🏨</div>
-            <h3>Hotels &amp; Lodges</h3>
-            <p>Manage dine-in, room dining, and hotel restaurant billing with multi-table support.</p>
-          </div>
-
-          <!-- User 2 -->
-          <div class="hotel-user-card reveal">
-            <div class="hotel-user-icon" aria-hidden="true">🍽️</div>
-            <h3>Family Restaurants</h3>
-            <p>Multi-cuisine dining, Family AC &amp; Non-AC section management, and KOT dispatch.</p>
-          </div>
-
-          <!-- User 3 -->
-          <div class="hotel-user-card reveal">
-            <div class="hotel-user-icon" aria-hidden="true">☕</div>
-            <h3>Cafes &amp; Coffee Shops</h3>
-            <p>Fast counter billing, quick order customization, and instant parcel packing tabs.</p>
-          </div>
-
-          <!-- User 4 -->
-          <div class="hotel-user-card reveal">
-            <div class="hotel-user-icon" aria-hidden="true">🍛</div>
-            <h3>Dhabas &amp; Highway Diners</h3>
-            <p>Built for high-volume rush hours, rapid table turnover, and offline reliability.</p>
-          </div>
-
-          <!-- User 5 -->
-          <div class="hotel-user-card reveal">
-            <div class="hotel-user-icon" aria-hidden="true">🍕</div>
-            <h3>Food Outlets &amp; QSRs</h3>
-            <p>Quick service billing, token generation, and fast customer checkout in seconds.</p>
-          </div>
-
-          <!-- User 6 -->
-          <div class="hotel-user-card reveal">
-            <div class="hotel-user-icon" aria-hidden="true">🍰</div>
-            <h3>Sweet Shops &amp; Bakeries</h3>
-            <p>Item weight &amp; unit billing, barcode scanning, and daily sales tracking.</p>
-          </div>
-
-          <!-- User 7 -->
-          <div class="hotel-user-card reveal">
-            <div class="hotel-user-icon" aria-hidden="true">🥡</div>
-            <h3>Cloud Kitchens</h3>
-            <p>Direct parcel order tracking, kitchen prep tickets, and expense management.</p>
-          </div>
-
-          <!-- User 8 -->
-          <div class="hotel-user-card reveal">
-            <div class="hotel-user-icon" aria-hidden="true">🍹</div>
-            <h3>Juice &amp; Snack Centers</h3>
-            <p>One-touch quick item keys, rush-hour counter sales, and day-end cash tally.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 4: Core Features Breakdown Table -->
-    <section class="section hotel-features-section">
-      <div class="container">
-        <div class="section-head text-center">
-          <p class="eyebrow">Feature Summary</p>
-          <h2>Core capabilities <span>at a glance</span></h2>
-          <p class="lede">A complete summary of what makes Smart Hotel Billing the ideal choice for your business.</p>
-        </div>
-
-        <div class="hotel-feature-table-wrap reveal">
-          <table class="hotel-feature-table" aria-label="Smart Hotel Billing core feature comparison table">
-            <thead>
-              <tr>
-                <th scope="col">Software Module</th>
-                <th scope="col">Capabilities &amp; Operating Benefits</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="hotel-feat-name">
-                    <span aria-hidden="true">🧾</span> Fast Customer Billing
-                  </div>
-                </td>
-                <td>Create bills in under 2 minutes, select dishes by photo, code, or search, toggle between Dine-In and Takeaway, and print thermal/A4 GST receipts.</td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="hotel-feat-name">
-                    <span aria-hidden="true">🍲</span> Preloaded Menu (150+ Items)
-                  </div>
-                </td>
-                <td>Ready-made Indian multi-cuisine database with photos. Update rates in seconds, add new items, manage Veg/Non-Veg classifications, and configure dish combos.</td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="hotel-feat-name">
-                    <span aria-hidden="true">🪑</span> Table &amp; Floor Management
-                  </div>
-                </td>
-                <td>Interactive visual floor layouts with real-time table occupancy (Available / Occupied). Transfer tables, manage running tabs, and print running KOTs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="hotel-feat-name">
-                    <span aria-hidden="true">📈</span> One-Click Sales Analytics
-                  </div>
-                </td>
-                <td>Comprehensive daily, weekly, and monthly sales performance. Track total turnover, average order value, payment breakdown (Cash, UPI, Card), and top dishes.</td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="hotel-feat-name">
-                    <span aria-hidden="true">💸</span> Expense &amp; Cash Management
-                  </div>
-                </td>
-                <td>Log daily ingredient purchases, dairy, gas, and miscellaneous expenses. Keep accurate tabs on net profit margins and daily cash-in-drawer balance.</td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="hotel-feat-name">
-                    <span aria-hidden="true">🗣️</span> Multi-Language Support
-                  </div>
-                </td>
-                <td>Instant one-click toggle between <strong>English</strong>, <strong>Hindi (हिंदी)</strong>, and <strong>Marathi (मराठी)</strong> across the entire user interface and bill printouts.</td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="hotel-feat-name">
-                    <span aria-hidden="true">🔒</span> 100% Offline Architecture
-                  </div>
-                </td>
-                <td>Runs locally on your laptop or PC without needing an internet connection. Zero cloud downtime, zero monthly subscription fees, and total data ownership.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 5: Free Demo & Trial Request Form -->
-    <section class="section hotel-demo-section" id="demo">
-      <div class="container hotel-demo-grid">
-        <div class="hotel-demo-intro">
-          <p class="eyebrow">Get Started Today</p>
-          <h2>Request your <span>Free Software Demo</span></h2>
-          <p class="lede">See how Smart Hotel Billing can simplify your hotel operations, speed up billing, and save time. We provide complete setup assistance and onboarding.</p>
-
-          <ul class="hotel-demo-points">
+          <ul class="hotel-highlights-list">
             <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              <span><strong>Preloaded &amp; Ready to Use:</strong> Includes 150+ dishes so you can start billing immediately.</span>
+              <span class="hl-icon">✔</span>
+              <span><strong>100% Offline:</strong> No Wi-Fi, No Cloud, Zero Downtime</span>
             </li>
             <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              <span><strong>Free Remote Demo &amp; Setup:</strong> Our team helps configure your hotel rates, floor tables, and printers.</span>
+              <span class="hl-icon">✔</span>
+              <span><strong>Thermal Printing:</strong> 58mm / 80mm ESC/POS (Bluetooth &amp; USB)</span>
             </li>
             <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              <span><strong>One-Time Affordable Price:</strong> No monthly cloud subscription. You own the software license forever.</span>
+              <span class="hl-icon">✔</span>
+              <span><strong>Bilingual Support:</strong> English, मराठी &amp; हिंदी</span>
+            </li>
+            <li>
+              <span class="hl-icon">✔</span>
+              <span><strong>Transparent Licensing:</strong> 1-Time Yearly Activation</span>
             </li>
           </ul>
 
-          <div class="hotel-trust-banner">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <p><strong>100% Offline Guarantee:</strong> Your customer phone numbers, sales records, and financial books never leave your laptop.</p>
+          <div class="hotel-apk-cta-row">
+            <a class="btn-apk-download-hb" href="#download">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><polyline points="7 11 12 16 17 11"/><path d="M5 20h14"/></svg>
+              <span>Download 7-Day Free Trial</span>
+            </a>
+            <a class="btn btn-line" href="#screenshots">View Live Screens ↓</a>
           </div>
         </div>
 
-        <!-- Demo Request Form -->
-        <form class="contact-form" id="hotel-form" novalidate>
-          <div class="hotel-form-grid-2col">
+        <!-- Dual Phone Mockup Preview -->
+        <div class="hotel-dual-phone-wrap" aria-label="Hotel Billing Software mobile screens preview">
+          <!-- Phone 1: Table Grid -->
+          <div class="hotel-phone-device primary-phone">
+            <div class="hotel-phone-notch"></div>
+            <div class="hotel-phone-screen">
+              <img src="assets/hotel-tables-grid.jpg" alt="Hotel Billing Software interactive color coded table grid screenshot" width="458" height="1024" />
+            </div>
+            <span class="hotel-phone-caption">🟢 Table Grid (T1–T10)</span>
+          </div>
+
+          <!-- Phone 2: Order Taking & KOT -->
+          <div class="hotel-phone-device secondary-phone">
+            <div class="hotel-phone-notch"></div>
+            <div class="hotel-phone-screen">
+              <img src="assets/hotel-order-kot.jpg" alt="Tableside KOT order taking and cart screen" width="458" height="1024" />
+            </div>
+            <span class="hotel-phone-caption">👨‍🍳 Tableside KOT &amp; Cart</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. What is Hotel Billing Software? -->
+    <section class="hotel-what-is-section" id="about-app">
+      <div class="container hotel-what-is-grid">
+        <div class="hotel-what-is-copy">
+          <div class="hotel-amber-pill">
+            <span>Built Specifically For Food Businesses</span>
+          </div>
+          <h2>What is <span>Hotel Billing Software?</span></h2>
+          <p><strong>Hotel Billing Software</strong> (developed by Shiv Shambhu Software) is a standalone, lightweight, and high-performance Android Point of Sale (POS) system designed specifically for <strong>Restaurants, Hotels, Cafes, Dhabas, Food Trucks, Messes, and Bars</strong>.</p>
+          <p>Unlike traditional software that requires expensive computers, complicated networking, or continuous internet data packs, our app runs locally on any budget-friendly Android device. All your menu items, tables, sales records, and bills stay safely on your device with 100% privacy and zero recurring cloud costs.</p>
+          <div class="hotel-apk-cta-row" style="margin-top: 1.5rem;">
+            <a class="btn-apk-download-hb" href="#download">Get Free Trial APK →</a>
+            <a class="btn-whatsapp-hb" href="https://wa.me/919604200066?text=Hi%20Shivshambhu%20Software,%20tell%20me%20more%20about%20Hotel%20Billing%20App" target="_blank" rel="noopener noreferrer">Ask on WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Comparison Box -->
+        <div class="hotel-compare-box">
+          <h3>⚡ Traditional PC POS vs Hotel Billing Android POS</h3>
+          <ul class="hotel-compare-list">
+            <li class="hotel-compare-item">
+              <div class="old-way">❌ Expensive PC setup (₹35,000+)</div>
+              <div class="new-way">✔ Runs on any Android mobile / tab</div>
+            </li>
+            <li class="hotel-compare-item">
+              <div class="old-way">❌ Shuts down during internet failure</div>
+              <div class="new-way">✔ 100% Offline with zero downtime</div>
+            </li>
+            <li class="hotel-compare-item">
+              <div class="old-way">❌ Waiters write paper chits</div>
+              <div class="new-way">✔ Waiters take mobile KOT tableside</div>
+            </li>
+            <li class="hotel-compare-item">
+              <div class="old-way">❌ Heavy monthly cloud server fees</div>
+              <div class="new-way">✔ 1-time transparent yearly license</div>
+            </li>
+            <li class="hotel-compare-item">
+              <div class="old-way">❌ Complex LAN cable wiring</div>
+              <div class="new-way">✔ Wireless Bluetooth thermal printing</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Core Features & Business Benefits (6 Pillars) -->
+    <section class="hotel-features-section" id="features">
+      <div class="container">
+        <div class="section-head text-center">
+          <div class="hotel-amber-pill">
+            <span>Everything Your Restaurant Needs</span>
+          </div>
+          <h2>Core Features &amp; <span>Business Benefits</span></h2>
+          <p class="lede">Designed from the ground up to solve daily restaurant bottlenecks — from tableside orders to Bluetooth receipts.</p>
+        </div>
+
+        <div class="hotel-features-grid">
+          <!-- Feature 1: Dynamic Table Management -->
+          <article class="hotel-feature-card reveal">
+            <div class="hotel-feature-top">
+              <div class="hotel-feature-icon">🍽️</div>
+              <span class="hotel-feature-num">01</span>
+            </div>
+            <h3>Dynamic Table Management</h3>
+            <p>Visual color-coded grid lets managers and staff monitor the dining hall at a glance. Add new dining tables, reorder numbers, or remove tables in seconds.</p>
+            <div class="table-status-indicators">
+              <span class="table-status-pill avail">🟢 Green: Available</span>
+              <span class="table-status-pill pending">🟠 Orange: KOT Pending</span>
+              <span class="table-status-pill kitchen">🔵 Blue: In Kitchen</span>
+            </div>
+          </article>
+
+          <!-- Feature 2: Instant Kitchen Order Tickets (KOT) -->
+          <article class="hotel-feature-card reveal">
+            <div class="hotel-feature-top">
+              <div class="hotel-feature-icon">👨‍🍳</div>
+              <span class="hotel-feature-num">02</span>
+            </div>
+            <h3>Instant Kitchen Order Tickets (KOT)</h3>
+            <p>Waitstaff take orders directly tableside on Android mobile. Supports Half and Full portion pricing. Clearly separates pending items from sent kitchen items to eliminate kitchen delays.</p>
+            <div class="table-status-indicators">
+              <span class="table-status-pill avail">🍲 Half &amp; Full Rates</span>
+              <span class="table-status-pill kitchen">⏱️ Instant KOT Fire</span>
+            </div>
+          </article>
+
+          <!-- Feature 3: 1-Click Fast Billing & Settlement -->
+          <article class="hotel-feature-card reveal">
+            <div class="hotel-feature-top">
+              <div class="hotel-feature-icon">⚡</div>
+              <span class="hotel-feature-num">03</span>
+            </div>
+            <h3>1-Click Fast Billing &amp; Settlement</h3>
+            <p>Speed through rush hours. Settle bills via Cash, UPI / Dynamic QR, Card, or Split payments. Features 1-tap 5% GST computation (toggle ON/OFF) and flat/percentage discounts.</p>
+            <div class="table-status-indicators">
+              <span class="table-status-pill avail">💵 Cash • UPI QR • Card • Split</span>
+              <span class="table-status-pill pending">🏷️ 5% GST Toggle</span>
+            </div>
+          </article>
+
+          <!-- Feature 4: ESC/POS Bluetooth Thermal Printing -->
+          <article class="hotel-feature-card reveal">
+            <div class="hotel-feature-top">
+              <div class="hotel-feature-icon">🖨️</div>
+              <span class="hotel-feature-num">04</span>
+            </div>
+            <h3>ESC/POS Bluetooth Thermal Printing</h3>
+            <p>Works out-of-the-box with all standard 58mm and 80mm Bluetooth &amp; USB thermal printers. Automatically prints Hotel Name, Address, Contact, FSSAI License, and GSTIN. Plus 1-click WhatsApp bill sharing.</p>
+            <div class="table-status-indicators">
+              <span class="table-status-pill avail">📄 58mm &amp; 80mm Printers</span>
+              <span class="table-status-pill kitchen">📲 WhatsApp Bill Share</span>
+            </div>
+          </article>
+
+          <!-- Feature 5: Comprehensive Sales & Profit Analytics -->
+          <article class="hotel-feature-card reveal">
+            <div class="hotel-feature-top">
+              <div class="hotel-feature-icon">📊</div>
+              <span class="hotel-feature-num">05</span>
+            </div>
+            <h3>Comprehensive Sales &amp; Reports</h3>
+            <p>Real-time tracking of Today's Total Sales, Cash collection, UPI QR, and Card payments. Filter history by Day, Week, Month, or Year. Includes Counter Privacy Eye toggle to hide daily totals from visitors.</p>
+            <div class="table-status-indicators">
+              <span class="table-status-pill avail">📅 Day/Week/Month/Year</span>
+              <span class="table-status-pill pending">👁️ Counter Privacy Eye</span>
+            </div>
+          </article>
+
+          <!-- Feature 6: 100% Customizable Branding & Themes -->
+          <article class="hotel-feature-card reveal">
+            <div class="hotel-feature-top">
+              <div class="hotel-feature-icon">🎨</div>
+              <span class="hotel-feature-num">06</span>
+            </div>
+            <h3>100% Custom Branding &amp; Themes</h3>
+            <p>Personalize with your Hotel's English and regional names (मराठी / हिंदी). Choose from 6 built-in theme color palettes including Malhar Royal Maroon/Red, Ocean Blue, and Emerald Green.</p>
+            <div class="table-status-indicators">
+              <span class="table-status-pill avail">🇮🇳 English • मराठी • हिंदी</span>
+              <span class="table-status-pill kitchen">🎨 6 Color Themes</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Live Real App Screenshots -->
+    <section class="hotel-screenshots-section" id="screenshots">
+      <div class="container">
+        <div class="section-head text-center">
+          <div class="hotel-amber-pill">
+            <span>Verified Android Interface</span>
+          </div>
+          <h2>Live Real <span>Application Screenshots</span></h2>
+          <p class="lede">Explore actual screenshots of Hotel Billing Software running on Android phones.</p>
+        </div>
+
+        <div class="hotel-screenshots-grid">
+          <!-- Screen 1: Table Grid -->
+          <article class="hotel-screen-item reveal">
+            <div class="hotel-screen-thumb">
+              <img src="assets/hotel-tables-grid.jpg" alt="Table grid screen with available, KOT pending, and in kitchen tables" width="458" height="1024" loading="lazy" />
+            </div>
+            <div class="hotel-screen-info">
+              <h4>1. Table Layout Grid</h4>
+              <p>Visual status with live pending count &amp; bill amount per table.</p>
+            </div>
+          </article>
+
+          <!-- Screen 2: Order Taking & KOT -->
+          <article class="hotel-screen-item reveal">
+            <div class="hotel-screen-thumb">
+              <img src="assets/hotel-order-kot.jpg" alt="Order Taking and KOT screen with dish categories and cart" width="458" height="1024" loading="lazy" />
+            </div>
+            <div class="hotel-screen-info">
+              <h4>2. Tableside KOT</h4>
+              <p>Category quick tabs, Half/Full portions, and 1-tap Send to Kitchen.</p>
+            </div>
+          </article>
+
+          <!-- Screen 3: Settlement Modal -->
+          <article class="hotel-screen-item reveal">
+            <div class="hotel-screen-thumb">
+              <img src="assets/hotel-bill-settlement.png" alt="Fast Bill settlement modal with Cash, UPI QR, and GST switch" width="458" height="1024" loading="lazy" />
+            </div>
+            <div class="hotel-screen-info">
+              <h4>3. 1-Click Fast Settlement</h4>
+              <p>Cash, UPI QR, Split pay, 5% GST toggle, and clear table.</p>
+            </div>
+          </article>
+
+          <!-- Screen 4: Menu Management -->
+          <article class="hotel-screen-item reveal">
+            <div class="hotel-screen-thumb">
+              <img src="assets/hotel-menu-management.jpg" alt="Dish menu management with Half and Full pricing" width="458" height="1024" loading="lazy" />
+            </div>
+            <div class="hotel-screen-info">
+              <h4>4. Menu Management</h4>
+              <p>Add unlimited dishes, dish codes, categories, and availability toggle.</p>
+            </div>
+          </article>
+
+          <!-- Screen 5: Settings & Offline Code -->
+          <article class="hotel-screen-item reveal">
+            <div class="hotel-screen-thumb">
+              <img src="assets/hotel-settings-branding.jpg" alt="Settings screen showing offline device code and branding" width="458" height="1024" loading="lazy" />
+            </div>
+            <div class="hotel-screen-info">
+              <h4>5. Settings &amp; Offline Code</h4>
+              <p>Unique Device Code (e.g. SS-607F), language, theme, and printer setup.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. How the Offline Subscription Works (5-Step Pipeline) -->
+    <section class="hotel-pipeline-section" id="how-it-works">
+      <div class="container">
+        <div class="section-head text-center">
+          <div class="hotel-amber-pill">
+            <span>Simple 5-Step Offline Licensing</span>
+          </div>
+          <h2>How the Offline <span>Subscription Works</span></h2>
+          <p class="lede">Zero online account registration. Your software is permanently bound to your device for 100% offline security.</p>
+        </div>
+
+        <div class="hotel-pipeline-grid">
+          <!-- Step 1 -->
+          <div class="hotel-pipe-card reveal">
+            <span class="hotel-pipe-step-badge">Step 1</span>
+            <h4>Download &amp; Install</h4>
+            <p>Download the APK from our official website and install it on your Android phone or tablet.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="hotel-pipe-card reveal">
+            <span class="hotel-pipe-step-badge">Step 2</span>
+            <h4>7-Day Free Trial</h4>
+            <p>Open the app. Your 7-day free trial activates automatically with full feature access at ₹0.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="hotel-pipe-card reveal">
+            <span class="hotel-pipe-step-badge">Step 3</span>
+            <h4>Send Device Code</h4>
+            <p>Open <em>Settings &rarr; License</em> to view your unique Device Code:<br /><span class="hotel-device-code-chip">SS-607F</span><br />WhatsApp it to <strong>+91 9604200066</strong>.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="hotel-pipe-card reveal">
+            <span class="hotel-pipe-step-badge">Step 4</span>
+            <h4>UPI Payment</h4>
+            <p>Pay via GPay / PhonePe / Paytm / UPI QR. We instantly generate your 1-Year Activation Key.</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="hotel-pipe-card reveal">
+            <span class="hotel-pipe-step-badge">Step 5</span>
+            <h4>Enter Key &amp; Activate</h4>
+            <p>Paste the activation key into the app and tap <strong>Activate</strong>. Your app is 100% unlocked for the entire year!</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 2.5rem;">
+          <a class="btn-whatsapp-hb" href="https://wa.me/919604200066?text=Hi%20Shivshambhu%20Software,%20I%20want%20to%20activate%20Hotel%20Billing%20Software%20License" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>Activate via WhatsApp: +91 9604200066</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Who Can Use This Software -->
+    <section class="hotel-who-section" id="who-can-use">
+      <div class="container">
+        <div class="section-head text-center">
+          <div class="hotel-amber-pill">
+            <span>Versatile POS For Every Food Venture</span>
+          </div>
+          <h2>Who Can Use <span>Hotel Billing Software?</span></h2>
+          <p class="lede">Engineered to fit dine-in restaurants, takeaway kiosks, highway dhabas, and commercial messes.</p>
+        </div>
+
+        <div class="hotel-types-grid">
+          <div class="hotel-type-card reveal">
+            <span class="hotel-type-emoji">🍛</span>
+            <h4>Family Restaurants</h4>
+            <p>Table layouts, waiter KOT orders, split billing &amp; GST compliance.</p>
+          </div>
+          <div class="hotel-type-card reveal">
+            <span class="hotel-type-emoji">🏨</span>
+            <h4>Hotels &amp; Lodging Dining</h4>
+            <p>Rapid breakfast &amp; dinner room service or dine-in tracking.</p>
+          </div>
+          <div class="hotel-type-card reveal">
+            <span class="hotel-type-emoji">☕</span>
+            <h4>Cafes &amp; Coffee Shops</h4>
+            <p>Quick beverage counter billing, customer discounts &amp; UPI QR.</p>
+          </div>
+          <div class="hotel-type-card reveal">
+            <span class="hotel-type-emoji">🥘</span>
+            <h4>Dhabas &amp; Highway Eateries</h4>
+            <p>100% offline operation where cellular network connectivity is weak.</p>
+          </div>
+          <div class="hotel-type-card reveal">
+            <span class="hotel-type-emoji">🚚</span>
+            <h4>Food Trucks &amp; Pop-ups</h4>
+            <p>Lightweight mobile app paired with pocket Bluetooth thermal printer.</p>
+          </div>
+          <div class="hotel-type-card reveal">
+            <span class="hotel-type-emoji">🍲</span>
+            <h4>Khanawal &amp; Messes</h4>
+            <p>Special thali tracking, daily headcount, and daily cash collection.</p>
+          </div>
+          <div class="hotel-type-card reveal">
+            <span class="hotel-type-emoji">🍻</span>
+            <h4>Bars &amp; Permit Rooms</h4>
+            <p>Instant table clearing, fast settlement, and cash drawer privacy.</p>
+          </div>
+          <div class="hotel-type-card reveal">
+            <span class="hotel-type-emoji">🧁</span>
+            <h4>Sweet Shops &amp; Fast Food</h4>
+            <p>Preloaded menu items, rapid parcel billing, and WhatsApp receipts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Request Demo / Inquiry Form -->
+    <section class="section hotel-form-section" id="demo">
+      <div class="container">
+        <div class="section-head text-center">
+          <div class="hotel-amber-pill">
+            <span>Get Personalized Onboarding</span>
+          </div>
+          <h2>Request Demo / <span>7-Day Trial</span></h2>
+          <p class="lede">Fill in your hotel or restaurant details below. We'll connect with you on WhatsApp / Phone immediately to guide you through setup.</p>
+        </div>
+
+        <form class="hotel-form" id="hotel-form" novalidate>
+          <div class="form-grid">
             <div class="field">
-              <label for="hotel-name">Your Name *</label>
-              <input type="text" id="hotel-name" name="name" required placeholder="e.g. Ramesh Patil" autocomplete="name" />
+              <label for="hotel-name">Your Full Name *</label>
+              <input type="text" id="hotel-name" name="name" required placeholder="e.g. Rahul Patil" />
             </div>
 
             <div class="field">
               <label for="hotel-business">Hotel / Restaurant Name *</label>
-              <input type="text" id="hotel-business" name="business" required placeholder="e.g. Hotel Jay Malhar" />
+              <input type="text" id="hotel-business" name="business" required placeholder="e.g. Shre Jay Malhar Hotel" />
             </div>
 
             <div class="field">
-              <label for="hotel-phone">Mobile / WhatsApp Number *</label>
-              <input type="tel" id="hotel-phone" name="phone" required placeholder="e.g. +91 98765 43210" autocomplete="tel" />
+              <label for="hotel-phone">Phone / WhatsApp Number *</label>
+              <input type="tel" id="hotel-phone" name="phone" required placeholder="e.g. 9604200066" />
             </div>
 
             <div class="field">
               <label for="hotel-email">Email Address *</label>
-              <input type="email" id="hotel-email" name="email" required placeholder="e.g. hotel@gmail.com" autocomplete="email" />
+              <input type="email" id="hotel-email" name="email" required placeholder="you@example.com" />
             </div>
 
             <div class="field">
@@ -431,43 +612,43 @@
             <div class="field">
               <label for="hotel-type">Business Type</label>
               <select id="hotel-type" name="type">
-                <option value="Family Restaurant">Family Restaurant (AC / Non-AC)</option>
-                <option value="Hotel & Lodge">Hotel / Lodge with Dining</option>
+                <option value="Dine-in Restaurant">Dine-in Restaurant</option>
                 <option value="Cafe / Coffee Shop">Cafe / Coffee Shop</option>
-                <option value="Dhaba / Highway Diner">Dhaba / Highway Diner</option>
-                <option value="Fast Food / QSR">Fast Food Center / QSR</option>
-                <option value="Sweet Shop / Bakery">Sweet Shop / Bakery</option>
-                <option value="Other">Other Food Business</option>
+                <option value="Highway Dhaba">Highway Dhaba</option>
+                <option value="Mess / Khanawal">Mess / Khanawal</option>
+                <option value="Food Truck / QSR">Food Truck / QSR</option>
+                <option value="Bar / Permit Room">Bar / Permit Room</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="hotel-tables">Approx. Table Count</label>
+              <label for="hotel-tables">Table Count</label>
               <select id="hotel-tables" name="tables">
-                <option value="1-10 Tables">1 to 10 Tables</option>
-                <option value="11-25 Tables">11 to 25 Tables</option>
-                <option value="26-50 Tables">26 to 50 Tables</option>
+                <option value="1 - 10 Tables">1 - 10 Tables (Small Restaurant / Cafe)</option>
+                <option value="11 - 25 Tables">11 - 25 Tables (Medium Hotel)</option>
+                <option value="26 - 50 Tables">26 - 50 Tables (Large Multi-Section)</option>
                 <option value="50+ Tables">50+ Tables / Multi-Floor</option>
                 <option value="Counter / Parcel Only">Counter / Parcel Takeaway Only</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="hotel-os">Operating System</label>
+              <label for="hotel-os">Device Type / Setup</label>
               <select id="hotel-os" name="os">
-                <option value="Windows 10/11">Windows 10 / 11 (64-bit)</option>
-                <option value="macOS">macOS (Apple Silicon &amp; Intel)</option>
-                <option value="Windows 7/8">Windows 7 / 8</option>
+                <option value="Android Mobile">Android Smartphone</option>
+                <option value="Android Tablet">Android Tablet (8" - 12")</option>
+                <option value="Android POS Terminal">Android POS Terminal (Built-in Thermal)</option>
+                <option value="Multiple Android Devices">Multiple Android Phones (Waitstaff)</option>
               </select>
             </div>
 
             <div class="field hotel-form-span-full">
-              <label for="hotel-notes">Special Requirements / Notes (Optional)</label>
-              <textarea id="hotel-notes" name="notes" rows="3" placeholder="Tell us if you have multiple floors, thermal printer setup, custom dishes, or need demo guidance..."></textarea>
+              <label for="hotel-notes">Special Requirements or Questions (Optional)</label>
+              <textarea id="hotel-notes" name="notes" rows="3" placeholder="Tell us if you need thermal printer pairing, barcode menu setup, or multi-waiter demo guidance..."></textarea>
             </div>
           </div>
 
-          <button class="btn btn-hotel-primary" type="submit">Submit Demo Request <span aria-hidden="true">→</span></button>
+          <button class="btn btn-apk-download-hb" type="submit" style="width: 100%; max-width: 380px; margin: 1.5rem auto 0; display: flex;">Submit Demo Request →</button>
           <p class="form-status" id="hotel-status" role="status" aria-live="polite" hidden></p>
         </form>
       </div>
@@ -483,6 +664,25 @@
         </div>
 
         <div class="more-products-preview-grid">
+          <!-- Smart Garment Shop Manager -->
+          <article class="more-prod-card reveal">
+            <div class="more-prod-badge status-available">🟢 Available</div>
+            <div class="more-prod-media">
+              <img src="assets/shop-manage-preview.png" alt="Smart Garment Shop Manager app preview" loading="lazy" />
+            </div>
+            <div class="more-prod-content">
+              <span class="more-prod-tag">Android App • Garment Retail POS</span>
+              <h3>Smart Garment Shop Manager</h3>
+              <p>POS billing, barcode &amp; stock management for apparel stores. Size/color matrix, smartphone camera barcode scan &amp; UPI QR.</p>
+              <div class="more-prod-chips">
+                <span>5-Sec Fast Billing</span>
+                <span>Size/Color Matrix</span>
+                <span>UPI QR Receipts</span>
+              </div>
+              <a class="btn btn-studio-line" href="shop-manage.html">Explore App <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
           <!-- SSSPark QR Vehicle Sticker -->
           <article class="more-prod-card reveal">
             <div class="more-prod-badge status-available">🟢 Available</div>
@@ -520,63 +720,6 @@
               <a class="btn btn-studio-line" href="biometric-attendance.html">Explore Software <span aria-hidden="true">→</span></a>
             </div>
           </article>
-
-          <!-- Smart Garment Shop Manager -->
-          <article class="more-prod-card reveal">
-            <div class="more-prod-badge status-available">🟢 Available</div>
-            <div class="more-prod-media">
-              <img src="assets/shop-manage-preview.png" alt="Smart Garment Shop Manager app preview" loading="lazy" />
-            </div>
-            <div class="more-prod-content">
-              <span class="more-prod-tag">Android App • Garment Retail POS</span>
-              <h3>Smart Garment Shop Manager</h3>
-              <p>POS billing, barcode &amp; stock management for apparel stores. Size/color matrix, smartphone camera barcode scan &amp; UPI QR.</p>
-              <div class="more-prod-chips">
-                <span>5-Sec Fast Billing</span>
-                <span>Size/Color Matrix</span>
-                <span>UPI QR Receipts</span>
-              </div>
-              <a class="btn btn-studio-line" href="shop-manage.html">Explore App <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <!-- Medical Store Desktop ERP -->
-          <article class="more-prod-card reveal">
-            <div class="more-prod-badge status-recent">✨ Recently Developed</div>
-            <div class="more-prod-media">
-              <img src="assets/medical-app-preview.svg" alt="Medical Store Desktop Application stock and rack management interface" loading="lazy" />
-            </div>
-            <div class="more-prod-content">
-              <span class="more-prod-tag">Desktop ERP &amp; Pharmacy POS</span>
-              <h3>Medical Store Desktop Application</h3>
-              <p>Dedicated desktop ERP for pharmacies. Features rack &amp; box stock mapping, automatic expiry alerts, and rapid barcode GST billing.</p>
-              <div class="more-prod-chips">
-                <span>Box &amp; Rack Sync</span>
-                <span>Expiry Shield</span>
-                <span>100% Offline Speed</span>
-              </div>
-              <a class="btn btn-studio-line" href="index.html#products">View Product Details <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <!-- CashCount App -->
-          <article class="more-prod-card reveal">
-            <div class="more-prod-badge status-soon">⏳ In Review</div>
-            <div class="more-prod-media">
-              <img src="assets/cashcount-preview.png?v=2" alt="CashCount smart cash denomination tally mobile app" loading="lazy" />
-            </div>
-            <div class="more-prod-content">
-              <span class="more-prod-tag">Android Mobile App • Finance</span>
-              <h3>CashCount App</h3>
-              <p>Smart cash drawer &amp; currency calculator for cashiers and shop owners. Instant tally for all Indian notes (₹1000 to ₹10) and coins.</p>
-              <div class="more-prod-chips">
-                <span>₹1 to ₹1000 Notes &amp; Coins</span>
-                <span>1-Tap Quick Tally</span>
-                <span>Day-End Register</span>
-              </div>
-              <a class="btn btn-studio-line" href="index.html#products">View Product Details <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -594,6 +737,8 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2.5"></script>
+  <!-- Scripts -->
+  <script src="js/hotel-billing-config.js?v=1.0"></script>
+  <script src="js/main.js?v=2.6"></script>
 </body>
 </html>

@@ -43,22 +43,22 @@ window.NEXUS_PRODUCTS = [
   },
   {
     id: "hotel-billing",
-    name: "Smart Hotel Billing & Management Software",
-    tag: "Desktop Hotel & Restaurant POS",
+    name: "Hotel Billing Software",
+    tag: "Android Restaurant POS & Billing",
     status: "Available",
     statusClass: "status-available",
-    description: "100% offline desktop billing for hotels, restaurants & cafes. Create customer bills in < 2 minutes, 150+ preloaded menu items, live table/floor layout, and 1-click sales reports.",
+    description: "The smartest 100% offline restaurant POS & billing app for Android. Manage dine-in tables, rapid kitchen orders (KOT), Bluetooth thermal printing & daily sales without internet.",
     highlights: [
-      "Fast customer billing in less than 2 minutes",
-      "150+ Preloaded multi-cuisine food items with photos",
-      "Interactive table & floor layout with live occupancy",
-      "100% Offline with zero recurring monthly cloud fees"
+      "100% Offline — No Wi-Fi, No Cloud Server, Zero Downtime",
+      "Dynamic color-coded table grid (Available, KOT Pending, In Kitchen)",
+      "Instant tableside KOT mobile order taking & Half/Full pricing",
+      "ESC/POS Bluetooth & USB thermal receipt printing (58mm / 80mm)"
     ],
     link: "hotel-billing.html",
-    ctaText: "Explore Software",
-    secondaryLink: "hotel-billing.html#demo",
-    secondaryCtaText: "Request Free Demo",
-    image: "assets/hotel-billing-pos.png"
+    ctaText: "Explore App",
+    secondaryLink: "hotel-billing.html#download",
+    secondaryCtaText: "Download APK",
+    image: "assets/hotel-app-preview.svg"
   },
   {
     id: "shop-manage",
