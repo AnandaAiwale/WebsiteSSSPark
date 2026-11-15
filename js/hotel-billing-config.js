@@ -18,7 +18,7 @@ window.HOTEL_BILLING_APK_CONFIG = {
   fileSize: "12.5 MB",
   lastUpdated: "November 15, 2026",
   minAndroid: "Android 7.0+",
-  apkUrl: "downloads/hotel-billing.apk?v=2",
+  apkUrl: "downloads/hotel-billing.apk?v=3",
   apkFileName: "Hotel-Billing-Software-v1.0.apk",
   whatsappNumber: "919604200066",
   whatsappMessage: "Hi Shivshambhu Software, I am interested in Hotel Billing Software Android App. Please guide me."
