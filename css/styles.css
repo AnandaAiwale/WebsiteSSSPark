@@ -1094,6 +1094,11 @@ code {
   background: radial-gradient(circle at 50% 50%, #f5f3ff 0%, #ddd6fe 70%, #c4b5fd 100%);
 }
 
+.preview-hotel-app img,
+.preview-shop-manage img {
+  object-fit: contain;
+}
+
 /* Product Card Details (Right Side) */
 .product-card-details {
   display: flex;
@@ -1306,8 +1311,8 @@ code {
     gap: 1rem;
   }
   .product-card-preview {
-    min-height: 180px;
-    height: 180px;
+    min-height: 210px;
+    height: 210px;
   }
   .product-filter-bar {
     gap: 0.45rem;
