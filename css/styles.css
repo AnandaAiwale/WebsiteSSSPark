@@ -869,6 +869,13 @@ code {
   display: inline-block;
 }
 
+.products-title span {
+  color: #4f46e5;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .highlight-purple-wrap {
   position: relative;
   display: inline-block;
