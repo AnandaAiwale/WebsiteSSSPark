@@ -39,7 +39,7 @@ window.NEXUS_PRODUCTS = [
     ctaText: "Explore Software",
     secondaryLink: "biometric-attendance.html#trial",
     secondaryCtaText: "30-Day Free Trial",
-    image: "assets/biometric-app-preview.png"
+    image: "assets/biometric-preview.jpg"
   },
   {
     id: "hotel-billing-desktop",
@@ -58,7 +58,7 @@ window.NEXUS_PRODUCTS = [
     ctaText: "Explore Software",
     secondaryLink: "hotel-desktop.html#demo",
     secondaryCtaText: "Request Free Demo",
-    image: "assets/hotel-billing-pos.png"
+    image: "assets/hotel-desktop-preview.jpg"
   },
   {
     id: "hotel-billing-app",
@@ -77,7 +77,7 @@ window.NEXUS_PRODUCTS = [
     ctaText: "Explore App",
     secondaryLink: "hotel-billing.html#download",
     secondaryCtaText: "Download APK",
-    image: "assets/hotel-app-preview.svg"
+    image: "assets/hotel-app-mobile.jpg"
   },
   {
     id: "shop-manage",

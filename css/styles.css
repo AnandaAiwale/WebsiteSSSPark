@@ -1094,7 +1094,13 @@ code {
   background: radial-gradient(circle at 50% 50%, #f5f3ff 0%, #ddd6fe 70%, #c4b5fd 100%);
 }
 
-.preview-hotel-app img,
+.preview-hotel-app img {
+  object-fit: contain;
+  border-radius: 16px;
+  filter: drop-shadow(0 6px 14px rgba(180, 83, 9, 0.25));
+  max-height: 94%;
+}
+
 .preview-shop-manage img {
   object-fit: contain;
 }
