@@ -2607,3 +2607,413 @@ code {
     font-size: 0.74rem;
   }
 }
+
+/* ==========================================================================
+   Careers / Hiring Section
+   ========================================================================== */
+.nav-hiring-pill {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #10b981;
+  color: #ffffff;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  margin-left: 0.35rem;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+#careers {
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top));
+  background:
+    radial-gradient(circle at 12% 18%, rgba(209, 250, 229, 0.7) 0%, transparent 45%),
+    radial-gradient(circle at 88% 82%, rgba(224, 231, 255, 0.7) 0%, transparent 50%),
+    #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.careers-header {
+  margin-bottom: 2rem;
+}
+
+.careers-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.careers-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulseDot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  flex-shrink: 0;
+}
+
+#careers-heading {
+  font-size: clamp(2rem, 3.6vw, 2.75rem);
+  font-weight: 900;
+  color: #0f172a;
+  margin: 0.4rem 0 0.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+#careers-heading span {
+  background: linear-gradient(135deg, #0d8a6a 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-careers .lede {
+  margin: 0 auto;
+  max-width: 62ch;
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+.careers-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.25rem;
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), 0 2px 8px rgba(0, 0, 0, 0.02);
+  padding: clamp(1.5rem, 3.5vw, 2.75rem);
+  margin-top: 2rem;
+  align-items: stretch;
+}
+
+.careers-role-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.role-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.32rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.role-type {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.role-loc {
+  background: #f8fafc;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.role-status {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.role-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #059669;
+  display: inline-block;
+}
+
+.careers-role-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.5rem;
+}
+
+.careers-role-summary {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.careers-perks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.perk-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.85rem 1rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.perk-item:hover {
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+.perk-ico {
+  font-size: 1.35rem;
+  line-height: 1;
+  flex-shrink: 0;
+  padding-top: 0.1rem;
+}
+
+.perk-item strong {
+  display: block;
+  font-size: 0.85rem;
+  color: #0f172a;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+.perk-item p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+.careers-requirements {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+.careers-requirements h4 {
+  margin: 0 0 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #1e293b;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.careers-requirements ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.careers-requirements li {
+  font-size: 0.85rem;
+  color: #334155;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.5;
+}
+
+.req-check {
+  color: #059669;
+  font-weight: 900;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.careers-apply-box {
+  background: linear-gradient(150deg, #0d8a6a 0%, #064e3b 100%);
+  color: #ffffff;
+  border-radius: 18px;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 16px 36px rgba(13, 138, 106, 0.25);
+}
+
+.apply-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.apply-box-header h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 0.4rem;
+}
+
+.apply-box-header p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
+.apply-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.apply-channel-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #0f172a;
+  text-decoration: none;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.apply-channel-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+.apply-channel-card .channel-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.channel-phone .channel-icon {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.channel-whatsapp .channel-icon {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.channel-email .channel-icon {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.apply-channel-card .channel-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.apply-channel-card .channel-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex-grow: 1;
+}
+
+.channel-lbl {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.05em;
+}
+
+.channel-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  word-break: break-all;
+}
+
+.channel-hint {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.channel-action {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #0d8a6a;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+}
+
+.apply-channel-card:hover .channel-action {
+  transform: translateX(3px);
+}
+
+.apply-office-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  line-height: 1.4;
+}
+
+@media (max-width: 960px) {
+  .careers-card {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .careers-perks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .channel-action {
+    display: none;
+  }
+
+  .apply-channel-card {
+    padding: 0.8rem 0.9rem;
+  }
+
+  .channel-val {
+    font-size: 0.95rem;
+  }
+}
