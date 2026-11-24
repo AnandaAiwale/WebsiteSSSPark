@@ -1228,23 +1228,26 @@ code {
 /* Feature Tiles Row (3 Columns) */
 .product-features-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.45rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem;
   margin-top: auto;
   margin-bottom: 0.95rem;
+  width: 100%;
 }
 
 .feature-tile {
   background: #f8fafc;
   border: 1px solid #edf2f7;
   border-radius: 12px;
-  padding: 0.5rem 0.35rem;
+  padding: 0.45rem 0.25rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .tile-ico {
@@ -1253,13 +1256,14 @@ code {
 }
 
 .tile-lbl {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 800;
   color: #1e293b;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+  display: block;
 }
 
 /* Product Card Actions */
