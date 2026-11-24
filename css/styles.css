@@ -1011,6 +1011,7 @@ code {
   box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
   align-items: stretch;
+  min-height: 295px;
 }
 
 .product-item-card:hover {
@@ -1080,10 +1081,10 @@ code {
   background: radial-gradient(circle at 50% 50%, #f3e8ff 0%, #e9d5ff 70%, #d8b4fe 100%);
 }
 .preview-biometric {
-  background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%);
+  background: radial-gradient(circle at 50% 50%, #f0f7ff 0%, #e0f0fe 70%, #bae6fd 100%);
 }
 .preview-hotel-desktop {
-  background: radial-gradient(circle at 50% 50%, #fff7ed 0%, #fed7aa 70%, #fdba74 100%);
+  background: radial-gradient(circle at 50% 50%, #fff7ed 0%, #ffedd5 70%, #fed7aa 100%);
 }
 .preview-hotel-app {
   background: radial-gradient(circle at 50% 50%, #fef3c7 0%, #fde68a 70%, #fcd34d 100%);
@@ -1092,7 +1093,7 @@ code {
   background: radial-gradient(circle at 50% 50%, #ecfdf5 0%, #a7f3d0 70%, #6ee7b7 100%);
 }
 .preview-medical {
-  background: radial-gradient(circle at 50% 50%, #f0fdfa 0%, #99f6e4 70%, #5eead4 100%);
+  background: radial-gradient(circle at 50% 50%, #0f172a 0%, #090d16 100%);
 }
 .preview-cashcount {
   background: radial-gradient(120% 120% at 50% 15%, #0f213f 0%, #070d18 100%);
@@ -1110,6 +1111,22 @@ code {
 
 .preview-shop-manage img {
   object-fit: contain;
+}
+
+/* Desktop Application Cards — Full, Crisp, Uncropped Showcase */
+.preview-biometric img,
+.preview-hotel-desktop img,
+.preview-medical img,
+.preview-labs img {
+  object-fit: contain;
+  padding: 0.5rem;
+  border-radius: 12px;
+  max-height: 98%;
+  filter: drop-shadow(0 6px 14px rgba(15, 23, 42, 0.12));
+}
+
+.preview-medical img {
+  padding: 0.4rem;
 }
 
 /* Product Card Details (Right Side) */
@@ -1202,9 +1219,10 @@ code {
   line-height: 1.48;
   margin: 0 0 0.85rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  min-height: 2.55rem;
 }
 
 /* Feature Tiles Row (3 Columns) */
