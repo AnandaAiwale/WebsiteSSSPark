@@ -99,6 +99,25 @@ window.NEXUS_PRODUCTS = [
     image: "assets/shop-manage-preview.png"
   },
   {
+    id: "footwear-manage",
+    name: "Smart Footwear Shop Manager",
+    tag: "Footwear Retail POS & Pair Stock",
+    status: "Available",
+    statusClass: "status-available",
+    description: "The ultimate POS billing, barcode & pair stock management solution for footwear retailers and shoe stores. Manage UK/India shoe sizes 6 to 11, scan box barcodes, and print instant dynamic UPI QR bills.",
+    highlights: [
+      "5-second fast billing & instant barcode checkout",
+      "Specialized shoe size (UK 6-11) & pair variant stock matrix",
+      "Smartphone camera barcode scanning (zero bulky hardware)",
+      "Dynamic UPI QR receipts & custom size-exchange return policy"
+    ],
+    link: "footwear-manage.html",
+    ctaText: "Explore App",
+    secondaryLink: "footwear-manage.html#download",
+    secondaryCtaText: "Download APK",
+    image: "assets/footwear-preview.svg"
+  },
+  {
     id: "medical-store",
     name: "Medical Store Desktop Application",
     tag: "Enterprise Desktop ERP",

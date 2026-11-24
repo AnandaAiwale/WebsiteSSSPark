@@ -521,6 +521,8 @@
         let prefillText = "";
         if (type === "shopmanage") {
           prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and 7-Day Free Trial for the Smart Garment Shop Manager App.\n\nShop / Boutique Name:\nStore Type (Menswear / Boutique / Sarees / Kids):\nCity:\nPhone:";
+        } else if (type === "footwear") {
+          prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and 7-Day Free Trial for the Smart Footwear Shop Manager App.\n\nFootwear Store / Shop Name:\nStore Type (Retail / Wholesale / Multi-brand):\nCity:\nPhone:";
         } else if (type === "hotel") {
           prefillText = "Hi Shivshambhu Software team,\n\nI would like to request a demo and details for the Smart Hotel Billing & Management Software.\n\nHotel / Restaurant Name:\nCity:\nPhone:";
         } else if (type === "biometric") {

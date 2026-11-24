@@ -1,0 +1,124 @@
+/* ========================================================
+   Smart Footwear Shop Manager — Product Page Styles
+   ======================================================== */
+
+.footwear-page .section,
+.footwear-page .sm-hero {
+  scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top));
+}
+
+/* Hero Section */
+.footwear-page .sm-hero {
+  padding: 3.5rem 0 2.75rem;
+  background:
+    radial-gradient(900px 450px at 50% 0%, rgba(124, 58, 237, 0.09), transparent 70%),
+    radial-gradient(600px 300px at 85% 20%, rgba(147, 51, 234, 0.06), transparent 60%),
+    linear-gradient(180deg, #faf5ff 0%, #ffffff 40%, #f5f3ff 100%);
+  border-bottom: 1px solid #e9d5ff;
+}
+
+.footwear-page .sm-badge-pill {
+  background: #f5f3ff;
+  border: 1px solid #ddd6fe;
+  color: #6d28d9;
+}
+
+.footwear-page .sm-badge-dot {
+  background: #7c3aed;
+  box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.7);
+}
+
+.footwear-page .sm-purple-pill {
+  background: #f5f3ff;
+  color: #6d28d9;
+  border: 1px solid #ddd6fe;
+}
+
+.footwear-page .btn-sm-primary,
+.footwear-page .btn-apk-download {
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  box-shadow: 0 8px 20px -4px rgba(124, 58, 237, 0.35);
+  color: #ffffff;
+}
+
+.footwear-page .btn-sm-primary:hover,
+.footwear-page .btn-apk-download:hover {
+  background: linear-gradient(135deg, #6d28d9 0%, #4c1d95 100%);
+  box-shadow: 0 12px 28px -4px rgba(124, 58, 237, 0.45);
+  color: #ffffff;
+}
+
+.footwear-page .sm-apk-card {
+  border-color: #ddd6fe;
+  box-shadow: 0 16px 40px -8px rgba(124, 58, 237, 0.12);
+}
+
+.footwear-page .sm-apk-verified {
+  background: #f5f3ff;
+  color: #6d28d9;
+  border-color: #ddd6fe;
+}
+
+.footwear-page .sm-install-box {
+  background: #faf5ff;
+  border-color: #e9d5ff;
+}
+
+.footwear-page .sm-install-num {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+.footwear-page .sm-trial-spotlight {
+  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+  border-color: #ddd6fe;
+  color: #5b21b6;
+}
+
+.footwear-page .sm-plan-card.plan-featured {
+  border-color: #7c3aed;
+  box-shadow: 0 16px 36px rgba(124, 58, 237, 0.18);
+}
+
+.footwear-page .sm-plan-card.plan-featured .sm-plan-tag {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+.footwear-page .sm-plan-card .btn-plan.btn-plan-featured {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+.footwear-page .sm-plan-card .btn-plan.btn-plan-featured:hover {
+  background: #6d28d9;
+}
+
+.footwear-page .sm-plan-card .btn-plan.btn-plan-outline {
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+
+.footwear-page .sm-plan-card .btn-plan.btn-plan-outline:hover {
+  background: #f5f3ff;
+}
+
+.footwear-page .sm-howto-card:hover {
+  border-color: #c4b5fd;
+  box-shadow: 0 12px 28px -6px rgba(124, 58, 237, 0.15);
+}
+
+.footwear-page .sm-howto-badge {
+  background: #f5f3ff;
+  color: #6d28d9;
+}
+
+.footwear-page .sm-pillar-card:hover {
+  border-color: #c4b5fd;
+  box-shadow: 0 12px 28px -6px rgba(124, 58, 237, 0.14);
+}
+
+.footwear-page .sm-who-card:hover {
+  border-color: #c4b5fd;
+  box-shadow: 0 10px 24px -4px rgba(124, 58, 237, 0.12);
+}

@@ -1092,6 +1092,9 @@ code {
 .preview-shop-manage {
   background: radial-gradient(circle at 50% 50%, #ecfdf5 0%, #a7f3d0 70%, #6ee7b7 100%);
 }
+.preview-footwear {
+  background: radial-gradient(circle at 50% 50%, #f5f3ff 0%, #ede9fe 70%, #ddd6fe 100%);
+}
 .preview-medical {
   background: radial-gradient(circle at 50% 50%, #0f172a 0%, #090d16 100%);
 }
@@ -1109,7 +1112,8 @@ code {
   max-height: 94%;
 }
 
-.preview-shop-manage img {
+.preview-shop-manage img,
+.preview-footwear img {
   object-fit: contain;
 }
 
