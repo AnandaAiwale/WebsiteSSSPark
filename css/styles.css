@@ -1416,21 +1416,49 @@ code {
 }
 
 .more-prod-media {
+  position: relative;
   width: 100%;
-  height: 150px;
+  height: 165px;
   background: #0f172a;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .more-prod-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform 0.5s ease;
 }
 
 .more-prod-card:hover .more-prod-media img {
   transform: scale(1.03);
+}
+
+.more-prod-media.preview-shop-manage,
+.more-prod-media.preview-hotel-app,
+.more-prod-media.preview-footwear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem;
+}
+
+.more-prod-media.preview-shop-manage img,
+.more-prod-media.preview-hotel-app img,
+.more-prod-media.preview-footwear img {
+  width: auto;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.more-prod-media.preview-hotel-app img {
+  filter: drop-shadow(0 6px 14px rgba(180, 83, 9, 0.25));
 }
 
 .more-prod-content {
@@ -1484,13 +1512,34 @@ code {
   border: 1px solid #e2e8f0;
 }
 
-.more-prod-content .btn {
+.more-prod-content .btn,
+.more-prod-content .btn-studio-line {
   align-self: flex-start;
-  min-height: 2.3rem;
-  padding: 0.45rem 1rem;
-  font-size: 0.84rem;
-  font-weight: 600;
-  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.35rem;
+  padding: 0.5rem 1.25rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1e293b !important;
+  border: 1.5px solid #cbd5e1 !important;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: auto;
+}
+
+.more-prod-content .btn:hover,
+.more-prod-content .btn-studio-line:hover {
+  background: #4f46e5 !important;
+  color: #ffffff !important;
+  border-color: #4f46e5 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.25);
 }
 
 /* ========================================================
