@@ -1229,11 +1229,11 @@
   pointer-events: none;
 }
 
-/* Screenshots Gallery Grid (5 Columns) */
+/* Screenshots Gallery Grid (6 Columns) */
 .ssspark-screens-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1.15rem;
   margin-top: 2rem;
 }
 
@@ -1442,9 +1442,10 @@
 }
 
 /* Responsiveness for App Section */
-@media (max-width: 1100px) {
+@media (max-width: 1240px) {
   .ssspark-screens-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.35rem;
   }
 }
 
@@ -1473,9 +1474,10 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   .ssspark-screens-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 }
 
@@ -1483,6 +1485,9 @@
   .ssspark-features-grid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 540px) {
   .ssspark-screens-grid {
     grid-template-columns: 1fr;
     max-width: 320px;
