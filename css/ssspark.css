@@ -965,3 +965,527 @@
     animation: none;
   }
 }
+
+/* ========================================================
+   SSSPARK SMART VEHICLE MANAGER ANDROID APP SECTION
+   ======================================================== */
+
+.section-ssspark-app {
+  background:
+    radial-gradient(900px 450px at 50% 0%, rgba(13, 148, 136, 0.08), transparent 70%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 50%, #f0fdfa 100%);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 4.5rem 0 5rem;
+  scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top));
+}
+
+.app-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.95rem;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pulse-dot-green {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: pulseGreen 2s infinite;
+}
+
+@keyframes pulseGreen {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 7px rgba(34, 197, 94, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+/* App Spotlight Banner */
+.app-spotlight-card {
+  margin-top: 2.25rem;
+  background: linear-gradient(135deg, #090d16 0%, #0f172a 60%, #134e4a 100%);
+  border: 1.5px solid #1e293b;
+  border-radius: 24px;
+  padding: 2.75rem 3rem;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 2.5rem 3rem;
+  align-items: center;
+  box-shadow: 0 20px 48px -12px rgba(13, 148, 136, 0.25), 0 4px 16px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.app-spotlight-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  margin-bottom: 1.15rem;
+}
+
+.app-brand-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.app-brand-sub {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #2dd4bf;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.app-brand-title {
+  margin: 0.15rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.app-spotlight-desc {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+.app-badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.85rem;
+}
+
+.app-meta-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+  color: #e2e8f0;
+}
+
+.app-spotlight-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-playstore-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1.45rem;
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-playstore-download:hover {
+  background: #2dd4bf;
+  color: #042f2e;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(45, 212, 191, 0.4);
+}
+
+.play-svg-icon {
+  flex-shrink: 0;
+}
+
+.play-btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.play-btn-sub {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.8;
+}
+
+.play-btn-main {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.btn-spotlight-ghost {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.btn-spotlight-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.app-spotlight-privacy-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1.15rem;
+}
+
+.app-spotlight-privacy-note strong {
+  color: #2dd4bf;
+}
+
+.privacy-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+/* Spotlight Phone Visual */
+.app-spotlight-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.spotlight-phone-wrapper {
+  position: relative;
+  max-width: 290px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.spotlight-phone-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.45));
+  transition: transform 0.4s ease;
+}
+
+.app-spotlight-card:hover .spotlight-phone-img {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.spotlight-phone-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  height: 280px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.35) 0%, rgba(13, 148, 136, 0) 70%);
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Screenshots Gallery Grid (5 Columns) */
+.ssspark-screens-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.app-screen-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+.app-screen-card:hover {
+  transform: translateY(-6px);
+  border-color: #2dd4bf;
+  box-shadow: 0 16px 36px -8px rgba(13, 148, 136, 0.18);
+}
+
+.app-screen-preview {
+  width: 100%;
+  background: #0f172a;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-screen-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.app-screen-card:hover .app-screen-preview img {
+  transform: scale(1.03);
+}
+
+.app-screen-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.app-screen-step {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #0d9488;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.app-screen-info h4 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.35rem;
+  line-height: 1.35;
+}
+
+.app-screen-info p {
+  font-size: 0.83rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 9 Features 3x3 Grid */
+.ssspark-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.ssspark-feat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.45rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.ssspark-feat-card:hover {
+  border-color: #0d9488;
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px -6px rgba(13, 148, 136, 0.15);
+}
+
+.feat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.feat-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+.feat-ico-purple { background: #f5f3ff; color: #7c3aed; }
+.feat-ico-blue   { background: #eff6ff; color: #2563eb; }
+.feat-ico-green  { background: #ecfdf5; color: #059669; }
+.feat-ico-amber  { background: #fffbeb; color: #d97706; }
+.feat-ico-rose   { background: #fff1f2; color: #e11d48; }
+.feat-ico-red    { background: #fef2f2; color: #dc2626; }
+.feat-ico-teal   { background: #f0fdfa; color: #0d9488; }
+.feat-ico-indigo { background: #eef2ff; color: #4f46e5; }
+.feat-ico-violet { background: #faf5ff; color: #9333ea; }
+
+.feat-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.22rem 0.55rem;
+  background: #f1f5f9;
+  color: #475569;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.ssspark-feat-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.45rem;
+  line-height: 1.35;
+}
+
+.ssspark-feat-card p {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Privacy Commitment Banner */
+.app-privacy-banner {
+  margin-top: 2.75rem;
+  background: linear-gradient(135deg, #f0fdfa 0%, #ecfdf5 100%);
+  border: 1.5px solid #a7f3d0;
+  border-radius: 18px;
+  padding: 1.6rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 8px 24px -4px rgba(16, 185, 129, 0.1);
+}
+
+.privacy-shield-icon {
+  font-size: 2.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.privacy-banner-text {
+  flex: 1;
+}
+
+.privacy-banner-text h4 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #065f46;
+}
+
+.privacy-banner-text p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #047857;
+}
+
+.btn-playstore-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.35rem;
+  background: #0d9488;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.88rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.3);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-playstore-pill:hover {
+  background: #0f766e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.45);
+}
+
+/* Responsiveness for App Section */
+@media (max-width: 1100px) {
+  .ssspark-screens-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 960px) {
+  .app-spotlight-card {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.65rem;
+    text-align: center;
+  }
+  .app-spotlight-brand {
+    justify-content: center;
+  }
+  .app-badges-row,
+  .app-spotlight-ctas {
+    justify-content: center;
+  }
+  .app-spotlight-privacy-note {
+    text-align: left;
+  }
+  .ssspark-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .app-privacy-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .ssspark-screens-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 580px) {
+  .ssspark-features-grid {
+    grid-template-columns: 1fr;
+  }
+  .ssspark-screens-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin-inline: auto;
+  }
+}

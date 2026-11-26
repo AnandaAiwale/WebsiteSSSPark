@@ -5,22 +5,22 @@
 window.NEXUS_PRODUCTS = [
   {
     id: "ssspark",
-    name: "SSSPark QR Vehicle Sticker",
-    tag: "Smart Vehicle QR",
+    name: "SSSPark — Smart Vehicle Manager & QR Sticker",
+    tag: "Android App & Smart Vehicle QR",
     status: "Available",
     statusClass: "status-available",
-    description: "Scan a weatherproof sticker on the vehicle to contact the owner directly and resolve parking blockers, without disclosing private phone numbers.",
+    description: "Touchless vehicle QR sticker paired with the all-in-one Android app. Store vehicle documents, service & fuel expenses, expiry alerts, and emergency SOS with 100% on-device privacy.",
     highlights: [
-      "Zero App Required — opens in smartphone browser",
-      "Owner-controlled privacy & contact toggle",
-      "Weatherproof UV-coated reflective sticker",
-      "Instant scan alert & quick contact options"
+      "Now available on Google Play Store (Android App)",
+      "Digital Documents Vault: RC, Driving Licence, Insurance & PUC",
+      "Expiry Reminders, Emergency SOS dialer & Nearby Help maps",
+      "100% On-Device Privacy — papers & logs never leave your phone"
     ],
-    link: "ssspark.html",
-    ctaText: "Explore SSSPark",
-    secondaryLink: "ssspark.html#order",
-    secondaryCtaText: "Order Stickers",
-    image: "assets/ssspark-scan-flow.jpg"
+    link: "https://play.google.com/store/apps/details?id=com.shivshambhu.ssspark&hl=en_IN",
+    ctaText: "Google Play Store",
+    secondaryLink: "ssspark.html",
+    secondaryCtaText: "Explore SSSPark",
+    image: "assets/ssspark-app-dashboard.png"
   },
   {
     id: "biometric-attendance",
